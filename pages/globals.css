@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("../public/fonts/source-code-pro.regular.ttf") format("truetype"),
+    url("../public/fonts/source-code-pro.semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
