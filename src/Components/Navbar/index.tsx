@@ -69,9 +69,9 @@ function Navbar() {
           <MenuButton>About</MenuButton>
           <MenuButton>Contact</MenuButton>
           <MenuButton>
-            <Stack>
-              <Typography>Membership</Typography>
-              <KeyboardArrowDownIcon />
+            <Stack direction="row" alignItems="center">
+              Membership
+              <KeyboardArrowDownIcon fontSize="small" sx={{ mr: 0.5 }} />
             </Stack>
           </MenuButton>
           {/* <MainButton>Join</MainButton> */}

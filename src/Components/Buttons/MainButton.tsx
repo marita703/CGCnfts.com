@@ -1,7 +1,8 @@
+import { ButtonProps } from "@mui/material";
 import React from "react";
 
-function MainButton() {
+const MainButton: React.FC<ButtonProps> = () => {
   return <div>MainButton</div>;
-}
+};
 
 export default MainButton;
