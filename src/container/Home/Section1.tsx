@@ -1,7 +1,8 @@
+import { Box } from "@mui/material";
 import React from "react";
 
 function Section1() {
-  return <div>Section1</div>;
+  return <Box sx={{ height: "200vh" }}>Section1</Box>;
 }
 
 export default Section1;
