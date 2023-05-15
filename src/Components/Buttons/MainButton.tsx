@@ -18,12 +18,13 @@ const MainButton: React.FC<ButtonProps> = ({
         py: "6px",
         fontSize: size === "small" ? 14 : 16,
         fontWeight: "bold",
+        color: "primary.main",
         "&:hover": {
           bgcolor: "secondary.dark",
           filter:
             "drop-shadow(0px 8px 28px rgba(275, 74, 169, 02)) drop-shadow(0px 18px 88px rgba(275, 74, 169, 02) )",
           border: `1px solid #3b2c34`,
-          color: "primary.main",
+          color: "primary.light",
         },
 
         ...sx,
