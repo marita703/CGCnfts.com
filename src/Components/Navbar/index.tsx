@@ -1,4 +1,4 @@
-import { AppBar, Stack, Typography, keyframes } from "@mui/material";
+import { AppBar, Stack, Typography, keyframes, Hidden } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 import Logo from "../../../public/Logo.png";
@@ -6,6 +6,7 @@ import CircleIcon from "@mui/icons-material/Circle";
 import MenuButton from "../Buttons/MenuButton";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MainButton from "../Buttons/MainButton";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 
 const resourceKeyFrame = keyframes`
   0% {
@@ -38,7 +39,7 @@ function Navbar() {
         sx={{ height: "100%" }}
       >
         {/* left */}
-        <Stack direction="row" alignItems="center" spacing={5}>
+        <Stack direction="row" alignItems="center" spacing={{ xs: 2, md: 5 }}>
           {/* Logo */}
           <Image
             src={Logo}
@@ -64,19 +65,27 @@ function Navbar() {
         </Stack>
 
         {/* right */}
+        <Hidden mdDown>
+          <Stack direction="row" alignItems="center">
+            <MenuButton>Home</MenuButton>
+            <MenuButton>About</MenuButton>
+            <MenuButton>Contact</MenuButton>
+            <MenuButton>
+              <Stack direction="row" alignItems="center">
+                Membership
+                <KeyboardArrowDownIcon fontSize="small" sx={{ mr: 0.5 }} />
+              </Stack>
+            </MenuButton>
+            <MainButton size="small">Join</MainButton>
+          </Stack>
+        </Hidden>
 
-        <Stack direction="row" alignItems="center">
-          <MenuButton>Home</MenuButton>
-          <MenuButton>About</MenuButton>
-          <MenuButton>Contact</MenuButton>
-          <MenuButton>
-            <Stack direction="row" alignItems="center">
-              Membership
-              <KeyboardArrowDownIcon fontSize="small" sx={{ mr: 0.5 }} />
-            </Stack>
-          </MenuButton>
-          <MainButton size="small">Join</MainButton>
-        </Stack>
+        <Hidden mdUp>
+          <Stack direction="row" alignItems="center" spacing={2}>
+            <Typography> MENU</Typography>
+            <MenuOpenIcon fontSize="small" sx={{ mr: 0.5 }} />
+          </Stack>
+        </Hidden>
       </Stack>
     </AppBar>
   );
