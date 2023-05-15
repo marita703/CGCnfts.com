@@ -5,6 +5,7 @@ import Logo from "../../../public/Logo.png";
 import CircleIcon from "@mui/icons-material/Circle";
 import MenuButton from "../Buttons/MenuButton";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import MainButton from "../Buttons/MainButton";
 
 const resourceKeyFrame = keyframes`
   0% {
@@ -74,7 +75,7 @@ function Navbar() {
               <KeyboardArrowDownIcon fontSize="small" sx={{ mr: 0.5 }} />
             </Stack>
           </MenuButton>
-          {/* <MainButton>Join</MainButton> */}
+          <MainButton size="small">Join</MainButton>
         </Stack>
       </Stack>
     </AppBar>
