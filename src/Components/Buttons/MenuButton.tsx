@@ -2,9 +2,9 @@ import theme from "@/src/config/theme";
 import { Button, ButtonProps, Link } from "@mui/material";
 import React from "react";
 
-const MenuButton: React.FC<ButtonProps> = ({ children }) => {
+const MenuButton: React.FC<ButtonProps> = ({ children, href }) => {
   return (
-    <Link
+    <Button
       sx={{
         fontSize: 14,
         color: "text.secondary",
@@ -19,9 +19,10 @@ const MenuButton: React.FC<ButtonProps> = ({ children }) => {
         textDecoration: "none",
         textTransform: "uppercase",
       }}
+      href={href}
     >
       {children}
-    </Link>
+    </Button>
   );
 };
 
