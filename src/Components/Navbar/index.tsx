@@ -53,8 +53,8 @@ function Navbar() {
 
         {/* right */}
         <Hidden mdDown>
-          <Stack direction="row" alignItems="center">
-            <MenuButton>Home</MenuButton>
+          <Stack direction="row" alignItems="center" spacing={3}>
+            <MenuButton href="/">Home</MenuButton>
             <MenuButton>About</MenuButton>
             <MenuButton>Contact</MenuButton>
             <MenuButton>

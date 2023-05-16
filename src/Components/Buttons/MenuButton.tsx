@@ -1,10 +1,10 @@
 import theme from "@/src/config/theme";
-import { Button, ButtonProps } from "@mui/material";
+import { Button, ButtonProps, Link } from "@mui/material";
 import React from "react";
 
 const MenuButton: React.FC<ButtonProps> = ({ children }) => {
   return (
-    <Button
+    <Link
       sx={{
         fontSize: 14,
         color: "text.secondary",
@@ -16,10 +16,12 @@ const MenuButton: React.FC<ButtonProps> = ({ children }) => {
             "drop-shadow(0px 0px 10px #FF4AA9) drop-shadow(0px 0px 16px #FF4AA9) drop-shadow(0px 0px 40px #FF4AA9) ",
         },
         fontWeight: "bold",
+        textDecoration: "none",
+        textTransform: "uppercase",
       }}
     >
       {children}
-    </Button>
+    </Link>
   );
 };
 

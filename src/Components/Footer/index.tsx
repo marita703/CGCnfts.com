@@ -24,7 +24,7 @@ function Footer() {
           sx={{ px: 3, py: 0.3 }}
         >
           {/* right side */}
-          <Stack direction={{ xs: "column", sm: "row" }}>
+          <Stack direction={{ xs: "column", sm: "row" }} spacing={3}>
             <MenuButton>Discord</MenuButton>
             <MenuButton>Twitter</MenuButton>
             <MenuButton>Instagram</MenuButton>

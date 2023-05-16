@@ -1,4 +1,4 @@
-import { Button, ButtonProps, keyframes, useTheme } from "@mui/material";
+import { Button, ButtonProps, Link, keyframes, useTheme } from "@mui/material";
 import React from "react";
 
 const resourceKeyFrame = keyframes`
@@ -20,7 +20,7 @@ const MainButton: React.FC<ButtonProps> = ({
 }) => {
   const theme = useTheme();
   return (
-    <Button
+    <Link
       sx={{
         bgcolor: "#a583e1",
         letterSpacing: "0.2em",
@@ -31,6 +31,8 @@ const MainButton: React.FC<ButtonProps> = ({
         fontSize: size === "small" ? 14 : 16,
         fontWeight: "bold",
         color: "secondary.dark",
+        textDecoration: "none",
+        textTransform: "uppercase",
         animation: `${resourceKeyFrame} 3s infinite ease`,
         "&:hover": {
           bgcolor: "secondary.dark",
@@ -44,7 +46,7 @@ const MainButton: React.FC<ButtonProps> = ({
       }}
     >
       {children}
-    </Button>
+    </Link>
   );
 };
 
