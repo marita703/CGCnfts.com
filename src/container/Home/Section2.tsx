@@ -28,11 +28,13 @@ function Section2() {
         sx={{ height: "100%", alignItems: "center", justifyContent: "center" }}
       >
         <Image src={HeroImage} alt="heroImage" height={260} />
-        <Typography variant="h5" sx={{ mt: -10, mb: 5 }}>
-          Upgrade your{" "}
-          <Typography sx={{ textDecoration: "overline" }}>web1 web2</Typography>{" "}
-          web3{" "}
-        </Typography>
+        <Stack direction="row" spacing={1} sx={{ mt: -10, mb: 5 }}>
+          <Typography variant="h5">Upgrade your</Typography>
+          <Typography variant="h5" sx={{ textDecorationLine: "line-through" }}>
+            web1 web2
+          </Typography>
+          <Typography variant="h5">web3</Typography>
+        </Stack>
         <MainButton>Join</MainButton>
         {/* Neo Objects */}
         {/* this will change the opacity until it disapears */}

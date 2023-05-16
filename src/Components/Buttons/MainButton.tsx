@@ -19,6 +19,7 @@ const MainButton: React.FC<ButtonProps> = ({
   size = "normal",
   sx = {},
   href,
+  target,
 }) => {
   const theme = useTheme();
   return (
