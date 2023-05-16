@@ -1,5 +1,17 @@
-import { Button, ButtonProps, useTheme } from "@mui/material";
+import { Button, ButtonProps, keyframes, useTheme } from "@mui/material";
 import React from "react";
+
+const resourceKeyFrame = keyframes`
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
 const MainButton: React.FC<ButtonProps> = ({
   children,
@@ -10,7 +22,7 @@ const MainButton: React.FC<ButtonProps> = ({
   return (
     <Button
       sx={{
-        bgcolor: "secondary.dark",
+        bgcolor: "#a583e1",
         letterSpacing: "0.2em",
         border: `1px solid ${theme.palette.secondary.dark}`,
         borderRadius: "8px",
@@ -18,7 +30,8 @@ const MainButton: React.FC<ButtonProps> = ({
         py: "6px",
         fontSize: size === "small" ? 14 : 16,
         fontWeight: "bold",
-        color: "primary.main",
+        color: "secondary.dark",
+        animation: `${resourceKeyFrame} 3s infinite ease`,
         "&:hover": {
           bgcolor: "secondary.dark",
           filter:

@@ -8,18 +8,6 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MainButton from "../Buttons/MainButton";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 
-const resourceKeyFrame = keyframes`
-  0% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
-
 function Navbar() {
   return (
     <AppBar
@@ -54,12 +42,11 @@ function Navbar() {
             spacing="0.5em"
             sx={{
               color: "primary.light",
-              animation: `${resourceKeyFrame} 3s infinite ease`,
             }}
           >
             <CircleIcon sx={{ fontSize: "0.5em" }} />
-            <Typography variant="body2" letterSpacing="0.2em">
-              Crypto Girls Club
+            <Typography variant="body1" letterSpacing="0.2em" fontWeight="bold">
+              CRYPTO GIRLS CLUB
             </Typography>
           </Stack>
         </Stack>

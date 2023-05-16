@@ -15,6 +15,7 @@ const ENDPOINT =
 
 function Section1() {
   const [coins, setCoins] = useState<Coin[]>([]);
+  console.log(coins);
 
   useEffect(() => {
     fetch(ENDPOINT)
@@ -26,7 +27,7 @@ function Section1() {
   }, []);
 
   return (
-    <Paper>
+    <Paper sx={{ backgroundColor: "secondary.main" }}>
       <Marquee gradient={false} speed={40}>
         {coins.map((coin) => (
           <Stack
@@ -37,14 +38,18 @@ function Section1() {
             spacing="0.3em"
           >
             <Avatar src={coin.image} sx={{ height: 20, width: 20 }} />
-            <Typography>{coin.name}</Typography>
-            <Typography color="info.light"> ${coin.current_price}</Typography>
+            <Typography sx={{ fontWeight: "bold" }}>{coin.name}</Typography>
+            <Typography color="info.light">
+              {" "}
+              ${coin.current_price.toFixed(3)}
+            </Typography>
             <Typography
               sx={{
                 color:
                   coin.price_change_percentage_24h >= 0
                     ? "success.light"
-                    : "error.light",
+                    : "primary.light",
+                fontWeight: "bold",
               }}
             >
               {coin.price_change_percentage_24h.toFixed(2)}%

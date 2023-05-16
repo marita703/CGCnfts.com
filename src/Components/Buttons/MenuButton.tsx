@@ -15,6 +15,7 @@ const MenuButton: React.FC<ButtonProps> = ({ children }) => {
           filter:
             "drop-shadow(0px 0px 10px #FF4AA9) drop-shadow(0px 0px 16px #FF4AA9) drop-shadow(0px 0px 40px #FF4AA9) ",
         },
+        fontWeight: "bold",
       }}
     >
       {children}
