@@ -5,6 +5,7 @@ import Image from "next/Image";
 import MainButton from "@/src/Components/Buttons/MainButton";
 import Diamond from "@/src/Components/Diamond/Diamond";
 import useScrollPosition from "@/src/hooks/useScrollPosition";
+import { BorderColor } from "@mui/icons-material";
 
 function Section2() {
   const theme = useTheme();
@@ -36,7 +37,7 @@ function Section2() {
         <Diamond
           sx={{
             opacity: 1 - scrollPosition / 600,
-            transform: `translate3d(16px, -8px, 0px) scale3d(${
+            transform: `translate3d(-32px, 8px, 0px) scale3d(${
               0.0065 * scrollPosition + 1
             }, ${
               0.0065 * scrollPosition + 1
@@ -45,8 +46,32 @@ function Section2() {
             }deg) skew(0deg, 0deg);`,
           }}
         />
-        <Diamond />
-        <Diamond />
+        <Diamond
+          sx={{
+            opacity: 1 - scrollPosition / 600,
+            transform: `translate3d(-8px, 0px, 0px)   scale3d(${
+              0.0065 * scrollPosition + 1
+            }, ${
+              0.0065 * scrollPosition + 1
+            }, 1) rotateX(0deg) rotateY(0deg) rotateZ(${
+              0.215 * scrollPosition + 45
+            }deg
+              ) skew(0deg, 0deg);`,
+            borderImage:
+              "linear-gradient(to right, #3966FF, #FF599c, #FBC13a) 1",
+            borderColor: "#FF4aa9",
+          }}
+        />
+        <Diamond
+          sx={{
+            opacity: 1 - scrollPosition / 600,
+            transform: `translate3d(16px, -8px, 0px)  scale3d(${
+              0.0065 * scrollPosition + 1
+            }, ${
+              0.0065 * scrollPosition + 1
+            }, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);`,
+          }}
+        />
       </Stack>
     </Container>
   );
