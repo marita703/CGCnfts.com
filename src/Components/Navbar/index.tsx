@@ -59,7 +59,7 @@ function Navbar() {
           >
             <CircleIcon sx={{ fontSize: "0.5em" }} />
             <Typography variant="body2" letterSpacing="0.2em">
-              Newsletter
+              Crypto Girls Club
             </Typography>
           </Stack>
         </Stack>
