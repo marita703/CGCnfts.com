@@ -9,7 +9,8 @@ import useScrollPosition from "@/src/hooks/useScrollPosition";
 function Section2() {
   const theme = useTheme();
   const scrollPosition = useScrollPosition();
-  console.log("Scroll position: " + scrollPosition);
+  // console.log(scrollPosition);
+
   return (
     <Container
       sx={{
@@ -31,7 +32,19 @@ function Section2() {
         </Typography>
         <MainButton>Join</MainButton>
         {/* Neo Objects */}
-        <Diamond />
+        {/* this will change the opacity until it disapears */}
+        <Diamond
+          sx={{
+            opacity: 1 - scrollPosition / 600,
+            transform: `translate3d(16px, -8px, 0px) scale3d(${
+              0.0065 * scrollPosition + 1
+            }, ${
+              0.0065 * scrollPosition + 1
+            }, 1) rotateX(0deg) rotateY(0deg) rotateZ(${
+              -0.18 * scrollPosition + 45
+            }deg) skew(0deg, 0deg);`,
+          }}
+        />
         <Diamond />
         <Diamond />
       </Stack>

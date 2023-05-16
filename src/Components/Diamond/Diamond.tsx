@@ -11,10 +11,12 @@ const Diamond: React.FC<BoxProps> = ({ sx = {} }) => {
         width: "30em",
         height: "30em",
         backgroundColor: "transparent",
-        transform: "rotateZ(-45deg)",
         border: `3px solid ${theme.palette.primary.main} `,
         borderImage: "linear-gradient(to right, #3966FF, #FF599C) 1",
         willChange: "transform, opacity",
+        transform: `translate3d(16px, -8px, 0px) scale3d( 1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ( 45
+        ) skew(0deg, 0deg);`,
+        transformStyle: "preserve-3d",
         boxShadow:
           "inset -1px -1px 20px rgba(255,74,169,.3), 2px 2px 20px rgba(255,74,169,.32), inset 3px 3px 20px -2px rgba(0,78,149,.48), -8px 1px 18px rgba(0,78,149,.42)",
         zIndex: -1,
