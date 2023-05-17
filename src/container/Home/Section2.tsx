@@ -18,22 +18,53 @@ function Section2() {
         height: "60vh",
         mb: 20,
         [theme.breakpoints.up("sm")]: {
-          height: "80vh",
-          mb: 30,
+          height: "70vh",
+          mb: 20,
         },
       }}
     >
       {/* content  */}
       <Stack
-        sx={{ height: "100%", alignItems: "center", justifyContent: "center" }}
+        sx={{
+          height: "100%",
+          alignItems: "center",
+          justifyContent: "center",
+          [theme.breakpoints.down("sm")]: {
+            fontSize: "14px",
+          },
+          [theme.breakpoints.up("sm")]: {
+            fontSize: "20px",
+          },
+          [theme.breakpoints.up("md")]: {
+            fontSize: "25px",
+          },
+        }}
       >
-        <Image src={HeroImage} alt="heroImage" height={260} />
+        <Image
+          src={HeroImage}
+          alt="heroImage"
+          style={{
+            width: "15em",
+            height: "15em",
+            objectFit: "cover",
+            objectPosition: "center",
+            marginTop: "25px",
+          }}
+        />
         <Stack direction="row" spacing={1} sx={{ mt: -10, mb: 5 }}>
-          <Typography variant="h5">Upgrade your</Typography>
-          <Typography variant="h5" sx={{ textDecorationLine: "line-through" }}>
-            web1 web2
+          <Typography fontSize="1em" fontWeight="bold">
+            UPGRADE YOUR
           </Typography>
-          <Typography variant="h5">web3</Typography>
+          <Typography
+            fontSize="1em"
+            sx={{ textDecorationLine: "line-through" }}
+            fontWeight="bold"
+          >
+            WEB1 WEB2
+          </Typography>
+          <Typography fontSize="1em" fontWeight="bold">
+            WEB3
+          </Typography>
         </Stack>
         <MainButton>Join</MainButton>
         {/* Neo Objects */}
