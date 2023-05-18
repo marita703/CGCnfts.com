@@ -66,7 +66,7 @@ function Section2() {
             WEB3
           </Typography>
         </Stack>
-        <MainButton>Join</MainButton>
+        <MainButton>JOIN</MainButton>
         {/* Neo Objects */}
         {/* this will change the opacity until it disapears */}
         <Diamond
