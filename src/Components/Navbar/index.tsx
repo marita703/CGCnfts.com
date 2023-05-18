@@ -55,8 +55,8 @@ function Navbar() {
         <Hidden mdDown>
           <Stack direction="row" alignItems="center" spacing={3}>
             <MenuButton href="/">Home</MenuButton>
-            <MenuButton>About</MenuButton>
-            <MenuButton>Contact</MenuButton>
+            <MenuButton href="/about">About</MenuButton>
+            <MenuButton href={"/contact"}>Contact</MenuButton>
             <MenuButton>
               <Stack direction="row" alignItems="center">
                 Membership
