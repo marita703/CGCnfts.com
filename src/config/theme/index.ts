@@ -23,7 +23,12 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ["SourceCodePro", "sans-serif"].join(","),
+    fontFamily: [
+      "SourceCodePro-normal",
+      "SourceCodePro-semibold",
+      "SourceCodePro-bold",
+      "sans-serif",
+    ].join(","),
     body2: {
       fontSize: 14,
       letterSpacing: "1px",

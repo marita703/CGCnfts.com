@@ -57,9 +57,11 @@ function Section3() {
           <Stack direction="row" justifyContent="space-between">
             <Typography
               sx={{
-                p: "3rem",
+                p: "2rem",
               }}
               variant="h2"
+              color="primary.contrastText"
+              fontFamily="SourceCodePro-bold"
             >
               Why are we doing this?
             </Typography>
@@ -67,17 +69,17 @@ function Section3() {
 
           <Grid container spacing={2}>
             <Grid item xs={4}>
-              <Typography variant="h4" sx={{ p: "3rem" }} fontWeight="bold">
+              <Typography variant="h4" sx={{ p: "2rem" }} fontWeight="bold">
                 The future of entrepreneurship is web3
               </Typography>
             </Grid>
             <Grid item xs={4}>
-              <Typography variant="h4" sx={{ p: "3rem" }} fontWeight="bold">
+              <Typography variant="h4" sx={{ p: "2rem" }} fontWeight="bold">
                 The internet changed our lives. Web3 will do too.
               </Typography>
             </Grid>
-            <Grid item xs={4}>
-              <Typography variant="h4" sx={{ p: "3rem" }} fontWeight="bold">
+            <Grid item xs={4} sx={{ background: "secondary.dark" }}>
+              <Typography variant="h4" sx={{ p: "2rem" }} fontWeight="bold">
                 We need powerful new voices to drive the web3.
               </Typography>
             </Grid>
