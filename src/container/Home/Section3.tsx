@@ -6,19 +6,28 @@ import {
   Stack,
   StackProps,
   Typography,
+  useTheme,
 } from "@mui/material";
 import Item from "../../Components/Card/Item";
 import React, { useEffect, useRef } from "react";
 
 function Section3() {
+  const theme = useTheme();
   return (
     <Stack
-      sx={{ height: "100vh", width: "90vw" }}
+      sx={{
+        width: "90vw",
+      }}
       direction="row"
       alignContent="center"
       justifyItems="center"
     >
-      <Box sx={{ height: "70% ", width: "100%", mb: "2em" }}>
+      <Box
+        sx={{
+          width: "100%",
+          mb: "2em",
+        }}
+      >
         <Stack
           sx={{
             height: "100%",
@@ -32,7 +41,7 @@ function Section3() {
           overflow="hidden"
         >
           <Grid container spacing={2}>
-            <Grid item xs={4}>
+            <Grid item xs={12} md={4}>
               <Typography
                 variant="h3"
                 sx={{ p: "3rem" }}
@@ -44,7 +53,13 @@ function Section3() {
               </Typography>
             </Grid>
 
-            <Grid item xs={8} alignContent="center" justifyContent="center">
+            <Grid
+              item
+              xs={12}
+              md={8}
+              alignContent="center"
+              justifyContent="center"
+            >
               <Typography variant="body1" sx={{ p: "3rem" }}>
                 CGC is the community that grants you access. The new version of
                 the internet is for everyone. We offer a no-bounds, community
@@ -52,35 +67,33 @@ function Section3() {
                 started.
               </Typography>
             </Grid>
-          </Grid>
-
-          <Stack direction="row" justifyContent="space-between">
-            <Typography
-              sx={{
-                p: "2rem",
-              }}
-              variant="h2"
-              color="primary.contrastText"
-              fontFamily="SourceCodePro-bold"
-            >
-              Why are we doing this?
-            </Typography>
-          </Stack>
-
-          <Grid container spacing={2}>
-            <Grid item xs={4}>
-              <Typography variant="h4" sx={{ p: "2rem" }} fontWeight="bold">
-                The future of entrepreneurship is web3
+            <Grid item xs={9} md={12}>
+              <Typography
+                sx={{
+                  p: "2rem",
+                }}
+                variant="h2"
+                color="primary.contrastText"
+                fontFamily="SourceCodePro-bold"
+                fontStyle="oblique"
+                textTransform="uppercase"
+              >
+                Why are we doing this?
               </Typography>
             </Grid>
-            <Grid item xs={4}>
-              <Typography variant="h4" sx={{ p: "2rem" }} fontWeight="bold">
-                The internet changed our lives. Web3 will do too.
+            <Grid item xs={12} md={4}>
+              <Typography variant="body1" sx={{ p: "2rem" }} fontWeight="bold">
+                * The future of entrepreneurship is web3
               </Typography>
             </Grid>
-            <Grid item xs={4} sx={{ background: "secondary.dark" }}>
-              <Typography variant="h4" sx={{ p: "2rem" }} fontWeight="bold">
-                We need powerful new voices to drive the web3.
+            <Grid item xs={12} md={4}>
+              <Typography variant="body1" sx={{ p: "2rem" }} fontWeight="bold">
+                * The internet changed our lives. Web3 will do too.
+              </Typography>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Typography variant="body1" sx={{ p: "2rem" }} fontWeight="bold">
+                * We need powerful new voices to drive the web3.
               </Typography>
             </Grid>
           </Grid>
