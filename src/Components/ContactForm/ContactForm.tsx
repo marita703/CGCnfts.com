@@ -19,7 +19,7 @@ function ContactForm() {
     message: "",
   });
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     try {
@@ -34,7 +34,7 @@ function ContactForm() {
   };
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <Stack direction="column" alignItems="center" justifyContent="center">
         <Stack
           sx={{

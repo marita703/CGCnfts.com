@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "@/src/Components/Layout/Layout";
 import ContactForm from "@/src/Components/ContactForm/ContactForm";
-import { Box, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 
 function Contact() {
   const theme = useTheme();
@@ -21,6 +21,10 @@ function Contact() {
           backgroundPositionY: "bottom",
         }}
       >
+        <Typography variant="h3" sx={{ p: "2rem" }}>
+          {" "}
+          Contact us!
+        </Typography>
         <ContactForm />
       </Box>
     </Layout>
