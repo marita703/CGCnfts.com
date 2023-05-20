@@ -8,7 +8,7 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import Item from "../../Components/Card/Item";
+
 import React, { useEffect, useRef } from "react";
 
 function Section3() {
@@ -26,6 +26,8 @@ function Section3() {
         sx={{
           width: "100%",
           mb: "2em",
+          // backgroundImage: "url(/BackgroundImages/asteroides.png)",
+          // backgroundRepeat: "repeat",
         }}
       >
         <Stack
@@ -33,14 +35,15 @@ function Section3() {
             height: "100%",
             width: "100%",
             m: "3em",
-            background:
-              "linear-gradient(transparent, #5d0b55, #8e076c, transparent)",
-            backdropFilter: "blur(10px)",
+            background: "linear-gradient(rgba(15,12,29,0) 22%,#0f0c1d)",
+
+            // "linear-gradient(transparent, #5d0b55, #8e076c, transparent)",
+            backdropFilter: "blur(1px)",
           }}
           // remember why you put this
           overflow="hidden"
         >
-          <Grid container spacing={2}>
+          <Grid container spacing={4}>
             <Grid item xs={12} md={4}>
               <Typography
                 variant="h3"
@@ -68,33 +71,83 @@ function Section3() {
               </Typography>
             </Grid>
             <Grid item xs={9} md={12}>
-              <Typography
-                sx={{
-                  p: "2rem",
+              <h2
+                style={{
+                  padding: "2rem",
+                  background: "linear-gradient(to right, #3966FF, #FF599C) 1",
+                  // webkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  fontFamily: "SourceCodePro-bold",
+                  fontStyle: "oblique",
+                  textTransform: "uppercase",
+                  color: "primary.contrastText",
                 }}
-                variant="h2"
-                color="primary.contrastText"
-                fontFamily="SourceCodePro-bold"
-                fontStyle="oblique"
-                textTransform="uppercase"
               >
                 Why are we doing this?
-              </Typography>
+              </h2>
             </Grid>
             <Grid item xs={12} md={4}>
-              <Typography variant="body1" sx={{ p: "2rem" }} fontWeight="bold">
-                * The future of entrepreneurship is web3
-              </Typography>
+              <Box
+                sx={{
+                  border: "3px solid transparent",
+                  borderRadius: "15px",
+                  background: "rgb(56 55 64 / 30%)",
+                  p: "1rem",
+                  boxShadow: "0 0 88px 8px rgba(255,74,169,.3)",
+                  m: "2rem",
+                  borderImage: "linear-gradient(to right, #39c7ff, #c259ff) 1",
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  sx={{ p: "2rem" }}
+                  fontWeight="bold"
+                >
+                  * The future of entrepreneurship is WEB3
+                </Typography>
+              </Box>
             </Grid>
             <Grid item xs={12} md={4}>
-              <Typography variant="body1" sx={{ p: "2rem" }} fontWeight="bold">
-                * The internet changed our lives. Web3 will do too.
-              </Typography>
+              <Box
+                sx={{
+                  border: "3px solid transparent",
+                  borderRadius: "10px",
+                  background: "rgb(56 55 64 / 30%)",
+                  p: "1rem",
+                  boxShadow: "0 0 88px 8px rgba(77,229,255,.3)",
+                  m: "2rem",
+                  borderImage: "linear-gradient(to right, #3966FF, #FF599C) 1",
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  sx={{ p: "2rem" }}
+                  fontWeight="bold"
+                >
+                  * The internet changed our lives. WEB3 will do too.
+                </Typography>
+              </Box>
             </Grid>
             <Grid item xs={12} md={4}>
-              <Typography variant="body1" sx={{ p: "2rem" }} fontWeight="bold">
-                * We need powerful new voices to drive the web3.
-              </Typography>
+              <Box
+                sx={{
+                  border: "3px solid transparent",
+                  borderRadius: "6px",
+                  background: "rgb(56 55 64 / 30%)",
+                  p: "1rem",
+                  boxShadow: "0 0 88px 8px rgba(163, 77, 255, 0.3)",
+                  m: "2rem",
+                  borderImage: "linear-gradient(to right, #efff39, #FF599C) 1",
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  sx={{ p: "2rem" }}
+                  fontWeight="bold"
+                >
+                  * We need powerful new voices to drive the WEB3.
+                </Typography>
+              </Box>
             </Grid>
           </Grid>
         </Stack>

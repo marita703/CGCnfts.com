@@ -15,7 +15,7 @@ function Contact() {
             backgroundSize: "contain",
           },
 
-          backgroundSize: "cover",
+          backgroundSize: "COVER",
           backgroundRepeatX: "no-repeat",
           backgroundRepeatY: "no-repeat",
           backgroundPositionY: "bottom",
