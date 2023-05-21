@@ -7,6 +7,7 @@ import MenuButton from "../Buttons/MenuButton";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MainButton from "../Buttons/MainButton";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import DropDownMenuSmallScreen from "../DropDownMenuButtons/DropDownMenuSmallScreen";
 
 function Navbar() {
   return (
@@ -69,7 +70,7 @@ function Navbar() {
 
         <Hidden mdUp>
           <Stack direction="row" alignItems="center" spacing={2}>
-            <Typography> MENU</Typography>
+            <DropDownMenuSmallScreen />
             <MenuOpenIcon fontSize="small" sx={{ mr: 0.5 }} />
           </Stack>
         </Hidden>
