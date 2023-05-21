@@ -6,7 +6,8 @@ import CircleIcon from "@mui/icons-material/Circle";
 import MenuButton from "../Buttons/MenuButton";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MainButton from "../Buttons/MainButton";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import menuButtons from "@/public/MenuButtonsData";
+
 import DropDownMenuSmallScreen from "../DropDownMenuButtons/DropDownMenuSmallScreen";
 
 function Navbar() {
@@ -36,7 +37,6 @@ function Navbar() {
             style={{ width: "2em", objectFit: "contain", height: "2em" }}
           />
 
-          {/* Pulse Text */}
           <Stack
             direction="row"
             alignItems="center"
@@ -55,15 +55,11 @@ function Navbar() {
         {/* right */}
         <Hidden mdDown>
           <Stack direction="row" alignItems="center" spacing={3}>
-            <MenuButton href="/">Home</MenuButton>
-            <MenuButton href="/about">About</MenuButton>
-            <MenuButton href={"/contact"}>Contact</MenuButton>
-            <MenuButton>
-              <Stack direction="row" alignItems="center">
-                Membership
-                <KeyboardArrowDownIcon fontSize="small" sx={{ mr: 0.5 }} />
-              </Stack>
-            </MenuButton>
+            {menuButtons.map((menuButton) => (
+              <MenuButton key={menuButton.value} href={menuButton.href}>
+                {menuButton.label}
+              </MenuButton>
+            ))}
             <MainButton size="small">Join</MainButton>
           </Stack>
         </Hidden>
@@ -71,7 +67,6 @@ function Navbar() {
         <Hidden mdUp>
           <Stack direction="row" alignItems="center" spacing={2}>
             <DropDownMenuSmallScreen />
-            <MenuOpenIcon fontSize="small" sx={{ mr: 0.5 }} />
           </Stack>
         </Hidden>
       </Stack>
