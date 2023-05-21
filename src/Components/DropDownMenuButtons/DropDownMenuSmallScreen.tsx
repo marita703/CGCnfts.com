@@ -22,14 +22,18 @@ const DropDownMenuSmallScreen: React.FC<ButtonProps> = ({
     setAnchorE1(null);
   };
 
-  //   const handleOptionChange = (option: string) => {
-  //     setSelectOption(option);
-  //     setAnchorE1(null);
-  //   };
-
   return (
     <>
-      <Button variant="contained" onClick={handleButtonClick} sx={{ ...sx }}>
+      <Button
+        variant="contained"
+        onClick={handleButtonClick}
+        sx={{
+          background: "transparent",
+          fontSize: "20px",
+          color: "white",
+          ...sx,
+        }}
+      >
         MENU
         <MenuOpenIcon fontSize="small" sx={{ mr: 0.5 }} />
       </Button>

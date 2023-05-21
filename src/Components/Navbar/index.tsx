@@ -4,7 +4,6 @@ import Image from "next/image";
 import Logo from "../../../public/Logo.png";
 import CircleIcon from "@mui/icons-material/Circle";
 import MenuButton from "../Buttons/MenuButton";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MainButton from "../Buttons/MainButton";
 import menuButtons from "@/public/MenuButtonsData";
 
