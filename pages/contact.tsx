@@ -22,7 +22,6 @@ function Contact() {
         }}
       >
         <Typography variant="h3" sx={{ p: "2rem" }}>
-          {" "}
           Contact us!
         </Typography>
         <ContactForm />

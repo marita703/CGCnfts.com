@@ -123,7 +123,7 @@ function OurRoots() {
               >
                 <h5
                   style={{
-                    borderLeft: "2px solid rgb    (250 171 180)",
+                    borderLeft: "2px solid #f8cab3",
                     padding: "0.5rem",
                   }}
                 >

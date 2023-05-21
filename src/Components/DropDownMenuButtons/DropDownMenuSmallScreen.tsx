@@ -12,7 +12,6 @@ const DropDownMenuSmallScreen: React.FC<ButtonProps> = ({
   href,
 }) => {
   const [anchorE1, setAnchorE1] = useState<null | HTMLElement>(null);
-  const [selectOption, setSelectOption] = useState<string>("");
 
   const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorE1(event.currentTarget);
