@@ -1,6 +1,5 @@
 import { Button, ButtonProps, keyframes, useTheme } from "@mui/material";
 import React from "react";
-import Link from "next/link";
 
 const resourceKeyFrame = keyframes`
   0% {
@@ -19,7 +18,6 @@ const MainButton: React.FC<ButtonProps> = ({
   size = "normal",
   sx = {},
   href,
-  target,
 }) => {
   const theme = useTheme();
   return (
