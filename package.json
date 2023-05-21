@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@emotion/cache": "latest",
-    "@emotion/server": "latest",
     "@emotion/react": "^11.11.0",
+    "@emotion/server": "latest",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.0",
@@ -20,6 +20,7 @@
     "@types/react-dom": "18.2.4",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
+    "mongoose": "^7.2.0",
     "next": "13.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
