@@ -31,7 +31,22 @@ function Header() {
             direction="column"
             sx={{ mt: "15rem", [theme.breakpoints.down("md")]: { mt: "1rem" } }}
           >
-            <h1>Empowering your future </h1>
+            <a
+              href="/membership"
+              style={{
+                textAlign: "left",
+                color: "#2567ff",
+                textDecoration: "none",
+                marginTop: "1rem",
+                fontWeight: "bold",
+                fontSize: "14px",
+              }}
+            >
+              Enter a new version of the internet
+            </a>
+            <h1 style={{ textTransform: "uppercase" }}>
+              Empowering your future{" "}
+            </h1>
             <Typography
               sx={{
                 mt: "1rem",
