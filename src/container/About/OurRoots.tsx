@@ -32,19 +32,6 @@ function OurRoots() {
       </Typography>
 
       <Grid container spacing={10} sx={{}}>
-        <Grid item xs={12} md={4}>
-          <Stack justifyContent="center" alignContent="center" direction="row">
-            <Box
-              height="30rem"
-              width="30rem"
-              sx={{
-                backgroundImage: "url(/ContentImages/blockchain.png)",
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-              }}
-            ></Box>
-          </Stack>
-        </Grid>
         <Grid item xs={12} md={8}>
           <Grid container sx={{}} spacing={4}>
             <Grid item xs={12} md={6}>
@@ -174,6 +161,19 @@ function OurRoots() {
               </Stack>
             </Grid>
           </Grid>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <Stack justifyContent="center" alignContent="center" direction="row">
+            <Box
+              height="30rem"
+              width="30rem"
+              sx={{
+                backgroundImage: "url(/ContentImages/blockchain.png)",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></Box>
+          </Stack>
         </Grid>
       </Grid>
     </Stack>
