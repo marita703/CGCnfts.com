@@ -1,3 +1,4 @@
+import { Widgets } from "@mui/icons-material";
 import { Box, Grid, Stack, Typography, useTheme } from "@mui/material";
 import React from "react";
 
@@ -16,7 +17,8 @@ function OurRoots() {
       <Typography
         sx={{
           textAlign: "justify",
-          m: "2rem",
+          wordBreak: "break-word",
+          whiteSpace: "break-spaces",
           mb: "4rem",
           [theme.breakpoints.down("md")]: {
             fontSize: "16px",
@@ -165,12 +167,16 @@ function OurRoots() {
         <Grid item xs={12} md={4}>
           <Stack justifyContent="center" alignContent="center" direction="row">
             <Box
-              height="30rem"
-              width="30rem"
               sx={{
+                height: "30rem",
+                width: "30rem",
                 backgroundImage: "url(/ContentImages/blockchain.png)",
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
+                [theme.breakpoints.down("md")]: {
+                  height: "15rem",
+                  width: "15rem",
+                },
               }}
             ></Box>
           </Stack>

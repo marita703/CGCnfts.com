@@ -5,15 +5,18 @@ function Header() {
   const theme = useTheme();
   return (
     <Stack
-      direction="column"
-      justifyContent="center"
-      alignContent="center"
-      m="3rem"
+      sx={{
+        direction: "column",
+        justifyContent: "center",
+        alignContent: "center",
+        m: "3rem",
+      }}
     >
       <Grid container spacing={1} marginBottom="2rem">
-        <Grid item xs={12} md={5}>
+        <Grid item xs={12} sm={12} md={12} lg={5}>
           <Box
             sx={{
+              m: "auto",
               backgroundImage: "url(/ContentImages/pixelwoman.png)",
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
@@ -26,10 +29,10 @@ function Header() {
             }}
           ></Box>
         </Grid>
-        <Grid item xs={12} md={7}>
+        <Grid item xs={12} sm={12} md={12} lg={7}>
           <Stack
             direction="column"
-            sx={{ mt: "15rem", [theme.breakpoints.down("md")]: { mt: "1rem" } }}
+            sx={{ mt: "15rem", [theme.breakpoints.down("lg")]: { mt: "1rem" } }}
           >
             <a
               href="/membership"
