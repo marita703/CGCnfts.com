@@ -1,13 +1,19 @@
-import { Box, Button, Stack } from "@mui/material";
+import { Box, Button, Stack, useTheme } from "@mui/material";
 import React from "react";
 
 function HeaderMembership() {
+  const theme = useTheme();
   return (
     <Stack
       direction="column"
       alignItems="center"
       justifyContent="center"
-      sx={{ p: "4rem" }}
+      sx={{
+        p: "4rem",
+        [theme.breakpoints.up("md")]: {
+          height: "100vh",
+        },
+      }}
     >
       <Stack direction="row">
         <h1 style={{ fontSize: "3rem" }}>We’re glad you made it.</h1>

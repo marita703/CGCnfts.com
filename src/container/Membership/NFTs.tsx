@@ -1,4 +1,4 @@
-import { Box, Stack, makeStyles } from "@mui/material";
+import { Box, Stack, makeStyles, useTheme } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 
@@ -27,12 +27,18 @@ const NFTArray: NFT[] = [
 ];
 
 const NFTs: React.FC = () => {
+  const theme = useTheme();
   return (
     <Stack
       direction="column"
       spacing={10}
       alignItems="center"
       justifyContent="center"
+      sx={{
+        [theme.breakpoints.up("md")]: {
+          height: "100vh",
+        },
+      }}
     >
       <div>
         <h2 id="Artwork">1000 UNIQUE MEMBERSHIP CARD UTILITY</h2>
@@ -51,7 +57,7 @@ const NFTs: React.FC = () => {
                 boxShadow:
                   "inset -1px -1px 20px rgba(255,74,169,.3), 2px 2px 20px rgba(255,74,169,.32), inset 3px 3px 20px -2px rgba(0,78,149,.48), -8px 1px 18px rgba(0,78,149,.42)",
                 borderRadius: "10px",
-                background: "linear-gradient(-45deg, #1a1a1c, #2c0f32)",
+                background: "transparent",
                 position: "relative",
                 animationDuration: "0.3s",
               }}

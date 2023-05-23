@@ -5,7 +5,7 @@ import Logo from "../../../public/Logo.png";
 import CircleIcon from "@mui/icons-material/Circle";
 import MenuButton from "../Buttons/MenuButton";
 import MainButton from "../Buttons/MainButton";
-import menuButtons from "@/public/MenuButtonsData";
+import menuButtons from "@/public/Data/MenuButtonsData";
 
 import DropDownMenuSmallScreen from "../DropDownMenuButtons/DropDownMenuSmallScreen";
 

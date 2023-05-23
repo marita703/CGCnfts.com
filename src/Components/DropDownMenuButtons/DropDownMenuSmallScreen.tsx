@@ -2,7 +2,7 @@ import { Button, ButtonProps, Menu, MenuItem } from "@mui/material";
 import React from "react";
 import { useState } from "react";
 import MenuButton from "../Buttons/MenuButton";
-import menuButtons from "@/public/MenuButtonsData";
+import menuButtons from "@/public/Data/MenuButtonsData";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 
 const DropDownMenuSmallScreen: React.FC<ButtonProps> = ({
