@@ -5,17 +5,28 @@ import Image from "next/image";
 interface NFT {
   name: string;
   url: string;
-  //   styles: string[];
+  borderImage: string;
 }
 
 const NFTArray: NFT[] = [
-  { name: "nft1", url: "/NFTS/Nft_0.png" },
-  { name: "nft2", url: "/NFTS/Nft_2.png" },
-  { name: "nft3", url: "/NFTS/Nft_3.png" },
+  {
+    name: "nft1",
+    url: "/NFTS/Nft_0.png",
+    borderImage: "linear-gradient(to right, #3966FF, #FF599c) 1",
+  },
+  {
+    name: "nft2",
+    url: "/NFTS/Nft_2.png",
+    borderImage: "linear-gradient(to right, #3966FF, #FF599C,  #FBC13a) 1",
+  },
+  {
+    name: "nft3",
+    url: "/NFTS/Nft_3.png",
+    borderImage: "linear-gradient(to right, #3966FF, #FF599C) 1",
+  },
 ];
 
 const NFTs: React.FC = () => {
-  const classes = useStyles();
   return (
     <Stack
       direction="column"
@@ -29,14 +40,16 @@ const NFTs: React.FC = () => {
       <Stack direction="row" spacing={4}>
         {NFTArray.map((object) => {
           return (
-            <Box
+            <div
               key={object.name}
-              sx={{
+              style={{
                 width: "21rem",
                 height: "25rem",
                 padding: "1.3em",
                 border: "3px solid #e277ae",
-                borderImage: "linear-gradient(to right, #3966FF, #FF599C) 1",
+                borderImage: `${object.borderImage}`,
+                boxShadow:
+                  "inset -1px -1px 20px rgba(255,74,169,.3), 2px 2px 20px rgba(255,74,169,.32), inset 3px 3px 20px -2px rgba(0,78,149,.48), -8px 1px 18px rgba(0,78,149,.42)",
                 borderRadius: "10px",
                 background: "linear-gradient(-45deg, #1a1a1c, #2c0f32)",
                 position: "relative",
@@ -56,7 +69,7 @@ const NFTs: React.FC = () => {
                   zIndex: "1",
                 }}
               ></Image>
-            </Box>
+            </div>
           );
         })}
       </Stack>
