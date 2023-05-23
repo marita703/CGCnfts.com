@@ -17,7 +17,7 @@ function Header() {
           <Box
             sx={{
               m: "auto",
-              backgroundImage: "url(/ContentImages/pixelwoman.png)",
+              backgroundImage: "url(/Images/ContentImages/pixelwoman.png)",
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               [theme.breakpoints.down("md")]: {

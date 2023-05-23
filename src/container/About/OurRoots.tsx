@@ -170,7 +170,7 @@ function OurRoots() {
               sx={{
                 height: "30rem",
                 width: "30rem",
-                backgroundImage: "url(/ContentImages/blockchain.png)",
+                backgroundImage: "url(/Images/ContentImages/blockchain.png)",
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
                 [theme.breakpoints.down("md")]: {

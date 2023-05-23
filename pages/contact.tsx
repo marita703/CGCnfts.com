@@ -10,7 +10,7 @@ function Contact() {
       <Box
         height="100vh"
         sx={{
-          backgroundImage: "url(/BackgroundImages/lines2.png)",
+          backgroundImage: "url(/Images/BackgroundImages/lines2.png)",
           [theme.breakpoints.down("md")]: {
             backgroundSize: "contain",
           },
