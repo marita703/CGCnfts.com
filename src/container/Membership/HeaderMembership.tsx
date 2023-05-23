@@ -26,7 +26,7 @@ function HeaderMembership() {
           of Crypto Girls Club membership collection.
         </p>
       </Stack>
-      <Stack direction="row">
+      <Stack direction="row" spacing={3}>
         <Button
           href="#JoinUs"
           sx={{
@@ -37,7 +37,7 @@ function HeaderMembership() {
             background: "linear-gradient(90deg, #c71c81, #0798d6)",
             color: "black",
             border: "none",
-            "&hover": {
+            "&:hover": {
               background: "#e277ae",
             },
           }}
@@ -53,6 +53,12 @@ function HeaderMembership() {
             borderRadius: "0.3em",
             textTransform: "uppercase",
             transition: "0.3s",
+            border: "1px #e277ae solid",
+            color: "#fff",
+            "&:hover": {
+              backgroundColor: "#fff",
+              color: "#111",
+            },
           }}
         >
           Learn More
