@@ -1,18 +1,17 @@
 import dbConnect from "@/db/connect";
-import {
-  Request as ExpressRequest,
-  Response as ExpressResponse,
-} from "express";
+
 // remember to install npm install @types/express
 import Contact from "@/db/models/Contact";
+import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
-  request: ExpressRequest,
-  response: ExpressResponse
+  request: NextApiRequest,
+  response: NextApiResponse
 ) {
   await dbConnect();
 
   if (request.method === "POST") {
+    console.log(request.body);
     try {
       const contactData = request.body;
       console.log(contactData);

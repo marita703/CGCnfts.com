@@ -12,12 +12,17 @@ function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    console.dir(e.target.name.value);
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/api/Contacts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: e.target.name.value,
+          email: e.target.email.value,
+          message: e.target.message.value,
+        }),
       });
     } catch (error) {
       console.log(error);

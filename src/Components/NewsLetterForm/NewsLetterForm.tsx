@@ -7,11 +7,31 @@ import {
   Hidden,
 } from "@mui/material";
 import React from "react";
+import { useRouter } from "next/router";
 
 function NewsLetterForm() {
+  const router = useRouter();
+
+  async function addContact(contact) {
+    const response = await fetch("/api/Contacts", {
+      method: "POST",
+      body: JSON.stringify(contact),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    if (response.ok) {
+      await response.json();
+      router.push("/");
+    } else {
+      console.error(`Error: ${response.status}`);
+    }
+  }
+
   const theme = useTheme();
+
   return (
-    <form>
+    <form onSubmit={addContact}>
       <Stack
         direction="column"
         alignItems="center"
