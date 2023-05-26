@@ -5,7 +5,7 @@ import UtilityArray from "@/public/Data/UtilityData";
 
 function Benefits() {
   return (
-    <Grid container spacing={3} sx={{ height: "100vh" }}>
+    <Grid container spacing={3} sx={{ m: "3rem" }}>
       {UtilityArray.map((utility) => {
         return (
           <Grid item key={utility.text} xs={12} sm={6} md={4}>

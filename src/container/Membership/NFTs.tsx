@@ -1,4 +1,4 @@
-import { Box, Stack, makeStyles, useTheme } from "@mui/material";
+import { Box, Grid, Stack, makeStyles, useTheme } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 import NFTArray from "@/public/Data/NFTData";
@@ -7,6 +7,7 @@ const NFTs: React.FC = () => {
   const theme = useTheme();
   return (
     <Stack
+      margin="3rem"
       direction="column"
       spacing={10}
       alignItems="center"
@@ -20,7 +21,11 @@ const NFTs: React.FC = () => {
       <div>
         <h2 id="Artwork">1000 UNIQUE MEMBERSHIP CARD UTILITY</h2>
       </div>
-      <Stack direction="row" spacing={4}>
+      <Stack
+        direction="row"
+        spacing={4}
+        sx={{ [theme.breakpoints.down("md")]: { direction: "column" } }}
+      >
         {NFTArray.map((object) => {
           return (
             <div
@@ -37,6 +42,9 @@ const NFTs: React.FC = () => {
                 background: "transparent",
                 position: "relative",
                 animationDuration: "0.3s",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
               <Image

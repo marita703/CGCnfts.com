@@ -10,15 +10,11 @@ import {
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
-interface FormValues {
-  name: string;
-  email: string;
-  ethWallet: string;
-  discordUserName: string;
-  termsAndConditions: boolean;
-}
+type FormProps = {
+  formStyles?: React.CSSProperties;
+};
 
-function WhiteListForm() {
+const WhiteListForm: React.FC<FormProps> = ({ formStyles }) => {
   const router = useRouter();
 
   const addEntry = async (e: React.FormEvent) => {
@@ -55,10 +51,10 @@ function WhiteListForm() {
   };
 
   return (
-    <form onSubmit={addEntry}>
+    <form onSubmit={addEntry} style={formStyles}>
       <Stack
         sx={{
-          width: "20rem",
+          width: "90%",
           mb: "3rem",
         }}
       >
@@ -104,13 +100,17 @@ function WhiteListForm() {
         />
         <br />
         <FormControl>
-          <Button id="submit" type="submit">
+          <Button
+            id="submit"
+            type="submit"
+            sx={{ backgroundColor: "#8e076c", color: "white" }}
+          >
             Submit
           </Button>
         </FormControl>
       </Stack>
     </form>
   );
-}
+};
 
 export default WhiteListForm;
