@@ -1,7 +1,7 @@
 import dbConnect from "@/db/connect";
 
 // remember to install npm install @types/express
-import Whitelist from "@/db/models/Emailsubscriptor";
+import WhiteListSubscriptor from "@/db/models/Whitelistsubscriptor";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
@@ -13,11 +13,13 @@ export default async function handler(
   if (request.method === "POST") {
     console.log(request.body);
     try {
-      const emailSubscriptortData = request.body;
-      console.log(emailSubscriptortData);
-      const emailSubscriptor = new Emailsubscriptor(emailSubscriptortData);
-      await emailSubscriptor.save();
-      return response.status(201).json(emailSubscriptor);
+      const wihiteListSubscriptorData = request.body;
+      console.log(wihiteListSubscriptorData);
+      const whiteListSubscriptor = new WhiteListSubscriptor(
+        wihiteListSubscriptorData
+      );
+      await whiteListSubscriptor.save();
+      return response.status(201).json(whiteListSubscriptor);
     } catch (error) {
       console.log(error);
       return response.status(400).json(error);

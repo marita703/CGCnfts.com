@@ -4,12 +4,6 @@ import React, { useState } from "react";
 function ContactForm() {
   const theme = useTheme();
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.dir(e.target.name.value);

@@ -13,7 +13,6 @@ function NewsLetterForm() {
   const router = useRouter();
 
   const addEntry = async (e: React.FormEvent) => {
-    alert("hello!");
     e.preventDefault();
     console.dir(e.target);
 
