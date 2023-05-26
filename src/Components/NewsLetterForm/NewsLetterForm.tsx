@@ -13,6 +13,7 @@ function NewsLetterForm() {
   const router = useRouter();
 
   const addEntry = async (e: React.FormEvent) => {
+    alert("hello!");
     e.preventDefault();
     console.dir(e.target);
 
@@ -61,9 +62,11 @@ function NewsLetterForm() {
               Email
             </TextField>
             <FormControl>
-              <Button sx={{ backgroundColor: "#8e076c", color: "white" }}>
-                {" "}
-                Subscribe!
+              <Button
+                type="submit"
+                sx={{ backgroundColor: "#8e076c", color: "white" }}
+              >
+                Subscribe
               </Button>
             </FormControl>
           </Stack>
@@ -81,10 +84,10 @@ function NewsLetterForm() {
           </TextField>
           <FormControl>
             <Button
+              type="submit"
               fullWidth
               sx={{ width: "95%", backgroundColor: "#8e076c", color: "white" }}
             >
-              {" "}
               Subscribe!
             </Button>
           </FormControl>
