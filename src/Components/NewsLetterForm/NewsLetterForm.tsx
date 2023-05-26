@@ -12,26 +12,27 @@ import { useRouter } from "next/router";
 function NewsLetterForm() {
   const router = useRouter();
 
-  async function addContact(contact) {
-    const response = await fetch("/api/Contacts", {
-      method: "POST",
-      body: JSON.stringify(contact),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    if (response.ok) {
-      await response.json();
-      router.push("/");
-    } else {
-      console.error(`Error: ${response.status}`);
+  const addEntry = async (e: React.FormEvent) => {
+    e.preventDefault();
+    console.dir(e.target);
+
+    try {
+      const response = await fetch("/api/Emailsubscriptors", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: e.target.email.value,
+        }),
+      });
+    } catch (error) {
+      console.log(error);
     }
-  }
+  };
 
   const theme = useTheme();
 
   return (
-    <form onSubmit={addContact}>
+    <form onSubmit={addEntry}>
       <Stack
         direction="column"
         alignItems="center"

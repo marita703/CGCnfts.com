@@ -12,6 +12,7 @@ const whiteListSubscriptorSchema = new Schema({
 
 const WhiteListSubscriptor =
   mongoose.models.WhiteListSubscriptor ||
-  mongoose.model("White List Subscriptor", whiteListSubscriptorSchema); //
+  mongoose.model("WhiteListSubscriptor", whiteListSubscriptorSchema);
+// no spaces in the "NameOftheSchema" in between coment coutes.
 
-export default WhiteListSubscriptor.modelName;
+export default WhiteListSubscriptor;

@@ -12,6 +12,6 @@ const emailSubscriptorSchema = new Schema({
 
 const EmailSubscriptor =
   mongoose.models.EmailSubscriptor ||
-  mongoose.model("Email Subscriptor", emailSubscriptorSchema);
+  mongoose.model("EmailSubscriptor", emailSubscriptorSchema);
 
-export default EmailSubscriptor.modelName;
+export default EmailSubscriptor;
