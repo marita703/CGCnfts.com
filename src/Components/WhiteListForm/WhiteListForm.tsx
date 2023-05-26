@@ -10,6 +10,14 @@ import {
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
+interface FormValues {
+  name: string;
+  email: string;
+  ethWallet: string;
+  discordUserName: string;
+  termsAndConditions: boolean;
+}
+
 function WhiteListForm() {
   const router = useRouter();
 
