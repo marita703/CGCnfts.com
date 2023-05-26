@@ -22,7 +22,7 @@ function WhiteListForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: e.target.name,
+          name: e.target.name.value,
           email: e.target.email.value,
           ethWallet: e.target.ethWallet.value,
           discordUserName: e.target.discordUserName.value,
