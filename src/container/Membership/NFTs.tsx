@@ -1,7 +1,6 @@
-import { Box, Grid, Stack, makeStyles, useTheme } from "@mui/material";
+import { Stack, useTheme, Hidden } from "@mui/material";
 import React from "react";
-import Image from "next/image";
-import NFTArray from "@/public/Data/NFTData";
+import NFTList from "@/src/Components/NFTList";
 
 const NFTs: React.FC = () => {
   const theme = useTheme();
@@ -14,56 +13,19 @@ const NFTs: React.FC = () => {
       justifyContent="center"
       sx={{
         [theme.breakpoints.up("md")]: {
-          height: "100vh",
+          height: "80vh",
         },
       }}
     >
       <div>
         <h2 id="Artwork">1000 UNIQUE MEMBERSHIP CARD UTILITY</h2>
       </div>
-      <Stack
-        direction="row"
-        spacing={4}
-        sx={{ [theme.breakpoints.down("md")]: { direction: "column" } }}
-      >
-        {NFTArray.map((object) => {
-          return (
-            <div
-              key={object.name}
-              style={{
-                width: "21rem",
-                height: "25rem",
-                padding: "1.3em",
-                border: "3px solid #e277ae",
-                borderImage: `${object.borderImage}`,
-                boxShadow:
-                  "inset -1px -1px 20px rgba(255,74,169,.3), 2px 2px 20px rgba(255,74,169,.32), inset 3px 3px 20px -2px rgba(0,78,149,.48), -8px 1px 18px rgba(0,78,149,.42)",
-                borderRadius: "10px",
-                background: "transparent",
-                position: "relative",
-                animationDuration: "0.3s",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Image
-                src={object.url}
-                alt={`image of ${object.name}`}
-                width={300}
-                height={360}
-                style={{
-                  height: "90%",
-                  width: "90%",
-                  border: " 1px solid #c35c91",
-                  borderRadius: "10px",
-                  zIndex: "1",
-                }}
-              ></Image>
-            </div>
-          );
-        })}
-      </Stack>
+      <Hidden mdDown>
+        <NFTList direction="row" />
+      </Hidden>
+      <Hidden mdUp>
+        <NFTList direction="column" />
+      </Hidden>
     </Stack>
   );
 };
