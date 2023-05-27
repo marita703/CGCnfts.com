@@ -5,22 +5,31 @@ import UtilityArray from "@/public/Data/UtilityData";
 
 function Benefits() {
   return (
-    <Grid container spacing={3} sx={{ m: "3rem" }}>
+    <Grid container sx={{ m: "3rem" }}>
       {UtilityArray.map((utility) => {
         return (
-          <Grid item key={utility.text} xs={12} sm={6} md={4}>
+          <Grid
+            item
+            key={utility.text}
+            xs={12}
+            sm={12}
+            md={6}
+            lg={4}
+            sx={{ p: "1rem" }}
+          >
             <Stack
               direction="column"
               alignItems="center"
               justifyContent="center"
+              spacing={3}
             >
               <Image
                 alt={`imageof${utility.text}`}
                 src={utility.src}
-                height={200}
-                width={200}
+                height={150}
+                width={150}
               />
-              <h5>{utility.text}</h5>
+              <h3>{utility.text}</h3>
             </Stack>
           </Grid>
         );
