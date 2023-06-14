@@ -7,11 +7,32 @@ import {
   Hidden,
 } from "@mui/material";
 import React from "react";
+import { useRouter } from "next/router";
 
 function NewsLetterForm() {
+  const router = useRouter();
+
+  const addEntry = async (e: React.FormEvent) => {
+    e.preventDefault();
+    console.dir(e.target);
+
+    try {
+      const response = await fetch("/api/Emailsubscriptors", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: e.target.email.value,
+        }),
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const theme = useTheme();
+
   return (
-    <form>
+    <form onSubmit={addEntry}>
       <Stack
         direction="column"
         alignItems="center"
@@ -40,9 +61,11 @@ function NewsLetterForm() {
               Email
             </TextField>
             <FormControl>
-              <Button sx={{ backgroundColor: "#8e076c", color: "white" }}>
-                {" "}
-                Subscribe!
+              <Button
+                type="submit"
+                sx={{ backgroundColor: "#8e076c", color: "white" }}
+              >
+                Subscribe
               </Button>
             </FormControl>
           </Stack>
@@ -60,10 +83,10 @@ function NewsLetterForm() {
           </TextField>
           <FormControl>
             <Button
+              type="submit"
               fullWidth
               sx={{ width: "95%", backgroundColor: "#8e076c", color: "white" }}
             >
-              {" "}
               Subscribe!
             </Button>
           </FormControl>
