@@ -59,7 +59,7 @@ function Navbar() {
                 {menuButton.label}
               </MenuButton>
             ))}
-            <MainButton size="small">Join</MainButton>
+            <MainButton size="small">Connect Wallet</MainButton>
           </Stack>
         </Hidden>
 

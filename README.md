@@ -32,3 +32,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+In order to test..
+
+Here is the address from the deployed contract for NFT collection:
+
+0x0a89ed26EdBe88577c038a89F30343607B6eF7C5 delployed in mumbai
+
+deployed with this wallet: 0x3200c9E4FF0A35e8417cdEE82F659108E4663408
