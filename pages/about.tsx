@@ -6,6 +6,7 @@ import Lines from "../public/BackgroundImages/lines.png";
 import OurRoots from "@/src/container/About/OurRoots";
 import Header from "@/src/container/About/Header";
 import NewsLetterBox from "@/src/Components/NewsLetterBox/NewsLetterBox";
+import CarrouselPart from "@/src/container/About/CarrouselPart";
 
 function about() {
   return (
@@ -13,6 +14,7 @@ function about() {
       <Stack overflow="hidden">
         <Header />
         <OurRoots />
+        <CarrouselPart />
         <NewsLetterBox />
       </Stack>
     </Layout>

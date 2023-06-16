@@ -7,6 +7,7 @@ import { CacheProvider, EmotionCache } from "@emotion/react";
 import theme from "@/src/config/theme";
 import createEmotionCache from "@/src/config/theme/createEmotionCache";
 import "./globals.css";
+import "@/pages/css/embla.css";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();

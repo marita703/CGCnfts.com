@@ -1,5 +1,6 @@
-import { Box, Button, Stack, useTheme } from "@mui/material";
+import { Box, Button, Grid, Stack, useTheme } from "@mui/material";
 import React from "react";
+import Image from "next/image";
 
 function HeaderMembership() {
   const theme = useTheme();
@@ -15,61 +16,106 @@ function HeaderMembership() {
         },
       }}
     >
-      <Stack direction="row">
-        <h1 style={{ fontSize: "3rem" }}>We’re glad you made it.</h1>
-        <span
-          style={{
-            width: "0.4em",
-            height: "6em",
-            background:
-              "linear-gradient(0deg, #c71c81 0%, #1c22c7 50%, #7e1679 100%)",
-            filter: "drop-shadow(0 0 0.5em #c71c81)",
-            margin: "0 2em",
-          }}
-        ></span>
-        <p>
-          JOIN THE GENESIS MEMBERSHIP: Limited access for the first ever batch
-          of Crypto Girls Club membership collection.
-        </p>
-      </Stack>
-      <Stack direction="row" spacing={3}>
-        <Button
-          href="#JoinUs"
-          sx={{
-            padding: "0.7rem 2rem",
-            borderRadius: "0.3em",
-            textTransform: "uppercase",
-            transition: "0.3s",
-            background: "linear-gradient(90deg, #c71c81, #0798d6)",
-            color: "black",
-            border: "none",
-            "&:hover": {
-              background: "#e277ae",
-            },
-          }}
-        >
-          Join us
-        </Button>
+      <Grid container>
+        <Grid item xs={12} md={4}>
+          <Image
+            src="/Images/HeroImages/nftnew.png"
+            alt="Image"
+            width={650}
+            height={450}
+          />
+        </Grid>
 
-        <Button
-          href="/about"
-          target="_blank"
+        <Grid
+          item
+          xs={12}
+          md={8}
           sx={{
-            padding: "0.7rem 2rem",
-            borderRadius: "0.3em",
-            textTransform: "uppercase",
-            transition: "0.3s",
-            border: "1px #e277ae solid",
-            color: "#fff",
-            "&:hover": {
-              backgroundColor: "#fff",
-              color: "#111",
-            },
+            display: "flex",
+            direction: "column",
+            justifyContent: "center",
+            alignContent: "center",
           }}
         >
-          Learn More
-        </Button>
-      </Stack>
+          <Grid container>
+            <Grid
+              item
+              xs={12}
+              md={12}
+              sx={{
+                display: "flex",
+                alignContent: "center",
+                direction: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Stack
+                direction="column"
+                alignContent="end"
+                justifyContent="center"
+              >
+                <h1 style={{ fontSize: "3rem" }}>We’re glad you made it.</h1>
+                <p>
+                  JOIN THE GENESIS MEMBERSHIP: Limited access for the first ever
+                  batch of Crypto Girls Club membership collection.
+                </p>
+              </Stack>
+            </Grid>
+
+            <Grid
+              item
+              xs={12}
+              md={12}
+              sx={{
+                display: "flex",
+                direction: "row",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Stack direction="row" spacing={3} alignItems="center">
+                <Button
+                  href="#JoinUs"
+                  sx={{
+                    padding: "0.7rem 2rem",
+                    borderRadius: "0.3em",
+                    textTransform: "uppercase",
+                    transition: "0.3s",
+                    background: "linear-gradient(90deg, #c71c81, #0798d6)",
+                    color: "black",
+                    border: "none",
+                    "&:hover": {
+                      background: "#e277ae",
+                    },
+                  }}
+                >
+                  Join us
+                </Button>
+
+                <Button
+                  href="/about"
+                  target="_blank"
+                  sx={{
+                    padding: "0.7rem 2rem",
+                    borderRadius: "0.3em",
+                    textTransform: "uppercase",
+                    transition: "0.3s",
+                    border: "1px #e277ae solid",
+                    color: "#fff",
+                    "&:hover": {
+                      backgroundColor: "#fff",
+                      color: "#111",
+                    },
+                  }}
+                >
+                  Learn More
+                </Button>
+              </Stack>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
     </Stack>
   );
 }
