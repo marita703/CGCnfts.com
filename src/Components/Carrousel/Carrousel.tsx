@@ -14,18 +14,21 @@ export const EmblaCarousel = (props: PropType) => {
   const [emblaRef] = useEmblaCarousel(options, [Autoplay()]);
 
   return (
-    <div className="embla" ref={emblaRef}>
-      <div className="embla__container">
-        {slides.map((index) => (
-          <div className="embla__slide" key={index}>
-            <Image
-              height={500}
-              width={800}
-              alt="image"
-              src={imageByIndex(index)}
-            />
-          </div>
-        ))}
+    <div className="embla">
+      <div className="embla__viewport" ref={emblaRef}>
+        <div className="embla__container">
+          {slides.map((index) => (
+            <div className="embla__slide" key={index}>
+              <Image
+                className="embla__slide__img"
+                height={650}
+                width={800}
+                alt="image"
+                src={imageByIndex(index)}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { EmblaCarousel } from "@/src/Components/Carrousel/Carrousel";
+import { Stack } from "@mui/material";
 import { EmblaOptionsType } from "embla-carousel-react";
 import React from "react";
 
@@ -8,9 +9,16 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 function CarrouselPart() {
   return (
-    <div>
+    <Stack
+      sx={{
+        direction: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        m: "3rem",
+      }}
+    >
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-    </div>
+    </Stack>
   );
 }
 
