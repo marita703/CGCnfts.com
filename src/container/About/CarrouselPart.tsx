@@ -4,7 +4,7 @@ import { EmblaOptionsType } from "embla-carousel-react";
 import React from "react";
 
 const OPTIONS: EmblaOptionsType = {};
-const SLIDE_COUNT = 6;
+const SLIDE_COUNT = 5;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 function CarrouselPart() {

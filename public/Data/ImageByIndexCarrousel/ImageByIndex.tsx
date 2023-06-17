@@ -1,9 +1,9 @@
-import image1 from "@/public/Images/ImagesForCarrousel/Slide1.jpg";
-import image2 from "@/public/Images/ImagesForCarrousel/Slide2.jpg";
-import image3 from "@/public/Images/ImagesForCarrousel/Slide3.jpg";
-import image4 from "@/public/Images/ImagesForCarrousel/Slide4.jpg";
-import image5 from "@/public/Images/ImagesForCarrousel/Slide5.jpg";
-import image6 from "@/public/Images/ImagesForCarrousel/Slide6.jpg";
+import image1 from "@/public/Images/ImagesForCarrousel/1.png";
+import image2 from "@/public/Images/ImagesForCarrousel/2.png";
+import image3 from "@/public/Images/ImagesForCarrousel/3.png";
+import image4 from "@/public/Images/ImagesForCarrousel/4.png";
+import image5 from "@/public/Images/ImagesForCarrousel/6.png";
+
 import { StaticImageData } from "next/image";
 
 export const images: string | StaticImageData[] = [
@@ -12,7 +12,6 @@ export const images: string | StaticImageData[] = [
   image3,
   image4,
   image5,
-  image6,
 ];
 
 const imageByIndex = (index: number): string | StaticImageData =>
