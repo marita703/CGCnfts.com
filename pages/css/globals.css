@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "SourceCodePro-normal";
+  src: url("../../public/fonts/source-code-pro.regular.ttf") format("truetype"),
+    url("../../public/fonts/source-code-pro.semibold.ttf") format("truetype"),
+    url("../../public/fonts/source-code-pro.black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceCodePro-semibold";
+  src: url("../../public/fonts/source-code-pro.semibold.ttf") format("truetype"),
+    url("../../public/fonts/source-code-pro.black.ttf") format("truetype");
+  font-weight: "semibold";
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceCodePro-bold";
+  src: url("../../public/fonts/source-code-pro.black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
