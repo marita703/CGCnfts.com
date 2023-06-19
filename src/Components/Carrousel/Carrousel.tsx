@@ -3,6 +3,7 @@ import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import imageByIndex from "@/public/Data/ImageByIndexCarrousel/ImageByIndex";
+import { Box, useTheme } from "@mui/material";
 
 type PropType = {
   options?: EmblaOptionsType;
@@ -10,6 +11,7 @@ type PropType = {
 };
 
 export const EmblaCarousel = (props: PropType) => {
+  const theme = useTheme();
   const { options, slides } = props;
   const [emblaRef] = useEmblaCarousel(options, [Autoplay()]);
 
@@ -18,7 +20,7 @@ export const EmblaCarousel = (props: PropType) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((index) => (
-            <div className="embla__slide" key={index}>
+            <Box className="embla__slide" key={index}>
               <Image
                 className="embla__slide__img"
                 height={650}
@@ -26,7 +28,7 @@ export const EmblaCarousel = (props: PropType) => {
                 alt="image"
                 src={imageByIndex(index)}
               />
-            </div>
+            </Box>
           ))}
         </div>
       </div>

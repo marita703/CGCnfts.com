@@ -1,9 +1,10 @@
 .embla {
   --slide-spacing: 1rem;
   --slide-size: 100%;
-  --slide-height: 29rem;
+  --slide-height: 29em;
   padding: 1.6rem;
 }
+
 .embla__viewport {
   overflow: hidden;
 }
@@ -28,6 +29,8 @@
   object-fit: cover;
   padding: 1rem;
   border: 1px solid white;
+  object-fit: cover;
+  object-position: center;
 
   border-image: linear-gradient(to right, #3966ff, #ff599c, white) 1;
 }
@@ -62,4 +65,10 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .embla__slide__img {
+    height: 15rem;
+  }
 }

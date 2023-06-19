@@ -17,7 +17,7 @@ function CarrouselPart() {
         m: "3rem",
       }}
     >
-      <h2>The Comunity</h2>
+      <h2 style={{ marginBottom: "3rem" }}>The Comunity</h2>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
     </Stack>
   );
