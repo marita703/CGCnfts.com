@@ -17,6 +17,7 @@ function CarrouselPart() {
         m: "3rem",
       }}
     >
+      <h2>Our Girls</h2>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
     </Stack>
   );

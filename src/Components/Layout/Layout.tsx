@@ -9,11 +9,11 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <Box>
+    <main className="sandbox">
       <Navbar />
       <Box sx={{ position: "relative", overflow: "hidden" }}>{children}</Box>
       <Footer />
-    </Box>
+    </main>
   );
 };
 
