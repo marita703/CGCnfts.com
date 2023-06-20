@@ -1,4 +1,5 @@
 import { Box, Button, Grid, Stack, Typography, useTheme } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 function Header() {
@@ -34,7 +35,7 @@ function Header() {
             direction="column"
             sx={{ mt: "15rem", [theme.breakpoints.down("lg")]: { mt: "1rem" } }}
           >
-            <a
+            <Link
               href="/membership"
               style={{
                 textAlign: "left",
@@ -46,7 +47,7 @@ function Header() {
               }}
             >
               Enter a new version of the internet
-            </a>
+            </Link>
             <h1 style={{ textTransform: "uppercase" }}>
               Empowering your future{" "}
             </h1>

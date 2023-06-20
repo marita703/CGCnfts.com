@@ -70,23 +70,27 @@ function HeaderMembership() {
               sx={{
                 display: "flex",
                 direction: "row",
-                alignItems: "center",
+                alignItems: "flex-start",
                 justifyContent: "center",
               }}
             >
               <Stack direction="row" spacing={3} alignItems="center">
                 <Button
-                  href="#JoinUs"
+                  href="#joinWhitelist"
                   sx={{
                     padding: "0.7rem 2rem",
                     borderRadius: "0.3em",
                     textTransform: "uppercase",
                     transition: "0.3s",
-                    background: "linear-gradient(90deg, #c71c81, #0798d6)",
+                    background: "linear-gradient(90deg, #2c6d60, #66b9dd)",
                     color: "black",
                     border: "none",
                     "&:hover": {
-                      background: "#e277ae",
+                      background: "#1c1927",
+                      filter:
+                        "drop-shadow(0px 8px 28px rgba(275, 74, 169, 02)) drop-shadow(0px 18px 88px rgba(275, 74, 169, 02) )",
+                      border: `1px solid #3b2c34`,
+                      color: "primary.light",
                     },
                   }}
                 >
@@ -101,7 +105,7 @@ function HeaderMembership() {
                     borderRadius: "0.3em",
                     textTransform: "uppercase",
                     transition: "0.3s",
-                    border: "1px #e277ae solid",
+                    border: "1px #56c366 solid",
                     color: "#fff",
                     "&:hover": {
                       backgroundColor: "#fff",

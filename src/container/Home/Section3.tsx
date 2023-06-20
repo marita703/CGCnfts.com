@@ -125,7 +125,7 @@ function Section3() {
               p: "1rem",
               boxShadow: "0 0 88px 8px rgba(163, 77, 255, 0.3)",
               m: "2rem",
-              borderImage: "linear-gradient(to right, #efff39, #FF599C) 1",
+              borderImage: "linear-gradient(to right, #1eea4e, #FF599C) 1",
             }}
           >
             <Typography variant="body2" sx={{ p: "1rem" }} fontWeight="bold">
