@@ -1,6 +1,15 @@
-import { Box, Button, Grid, Stack, useTheme } from "@mui/material";
+import {
+  Box,
+  Button,
+  Grid,
+  Hidden,
+  Stack,
+  Typography,
+  useTheme,
+} from "@mui/material";
 import React from "react";
 import Image from "next/image";
+import { AlignHorizontalCenter } from "@mui/icons-material";
 
 function HeaderMembership() {
   const theme = useTheme();
@@ -10,25 +19,46 @@ function HeaderMembership() {
       alignItems="center"
       justifyContent="center"
       sx={{
-        p: "4rem",
+        m: "3rem",
         [theme.breakpoints.up("md")]: {
-          height: "100vh",
+          height: "70vh",
         },
       }}
     >
-      <Grid container>
-        <Grid item xs={12} md={4}>
-          <Image
-            src="/Images/HeroImages/nftnew.png"
-            alt="Image"
-            width={650}
-            height={450}
-          />
+      <Grid container spacing="1rem">
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={4}
+          sx={{ display: "flex" }}
+          direction="row"
+          justifyContent="center"
+        >
+          <Hidden smDown>
+            <Image
+              src="/Images/HeroImages/nftnew2.png"
+              alt="Image"
+              width={500}
+              height={500}
+              style={{ margin: "auto" }}
+            />
+          </Hidden>
+          <Hidden smUp>
+            <Image
+              src="/Images/HeroImages/nftnew2.png"
+              alt="Image"
+              width={300}
+              height={300}
+              style={{ margin: "auto" }}
+            />
+          </Hidden>
         </Grid>
 
         <Grid
           item
           xs={12}
+          sm={12}
           md={8}
           sx={{
             display: "flex",
@@ -37,7 +67,7 @@ function HeaderMembership() {
             alignContent: "center",
           }}
         >
-          <Grid container>
+          <Grid container spacing="2rem">
             <Grid
               item
               xs={12}
@@ -52,10 +82,25 @@ function HeaderMembership() {
             >
               <Stack
                 direction="column"
-                alignContent="end"
+                alignContent="center"
                 justifyContent="center"
               >
-                <h1 style={{ fontSize: "3rem" }}>We’re glad you made it.</h1>
+                <Typography
+                  fontFamily="SourceCodePro-semibold"
+                  sx={{
+                    [theme.breakpoints.down("sm")]: {
+                      fontSize: "25px",
+                    },
+                    [theme.breakpoints.up("sm")]: {
+                      fontSize: "40px",
+                    },
+                    [theme.breakpoints.up("md")]: {
+                      fontSize: "60px",
+                    },
+                  }}
+                >
+                  We’re glad you made it.
+                </Typography>
                 <p>
                   JOIN THE GENESIS MEMBERSHIP: Limited access for the first ever
                   batch of Crypto Girls Club membership collection.

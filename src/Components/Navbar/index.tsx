@@ -6,8 +6,10 @@ import CircleIcon from "@mui/icons-material/Circle";
 import MenuButton from "../Buttons/MenuButton";
 import MainButton from "../Buttons/MainButton";
 import menuButtons from "@/public/Data/MenuButtonsData";
+import Link from "next/link";
 
 import DropDownMenuSmallScreen from "../DropDownMenuButtons/DropDownMenuSmallScreen";
+import ConnectWalletButton from "../Buttons/ConnectWalletButton";
 
 function Navbar() {
   return (
@@ -30,25 +32,33 @@ function Navbar() {
         {/* left */}
         <Stack direction="row" alignItems="center" spacing={{ xs: 2, md: 5 }}>
           {/* Logo */}
-          <Image
-            src={Logo}
-            alt={"logo"}
-            style={{ width: "2em", objectFit: "contain", height: "2em" }}
-          />
+          <Link href="/">
+            <Image
+              src={Logo}
+              alt={"logo"}
+              style={{ width: "2em", objectFit: "contain", height: "2em" }}
+            />
+          </Link>
 
-          <Stack
-            direction="row"
-            alignItems="center"
-            spacing="0.5em"
-            sx={{
-              color: "primary.light",
-            }}
-          >
-            <CircleIcon sx={{ fontSize: "0.5em" }} />
-            <Typography variant="body1" letterSpacing="0.2em" fontWeight="bold">
-              CRYPTO GIRLS CLUB
-            </Typography>
-          </Stack>
+          <Link href="/" style={{ textDecoration: "none" }}>
+            <Stack
+              direction="row"
+              alignItems="center"
+              spacing="0.5em"
+              sx={{
+                color: "primary.light",
+              }}
+            >
+              <CircleIcon sx={{ fontSize: "0.5em" }} />
+              <Typography
+                variant="body1"
+                letterSpacing="0.2em"
+                fontWeight="bold"
+              >
+                CRYPTO GIRLS CLUB
+              </Typography>
+            </Stack>
+          </Link>
         </Stack>
 
         {/* right */}
@@ -59,7 +69,9 @@ function Navbar() {
                 {menuButton.label}
               </MenuButton>
             ))}
-            <MainButton size="small">Connect Wallet</MainButton>
+            <ConnectWalletButton size="small">
+              Connect Wallet
+            </ConnectWalletButton>
           </Stack>
         </Hidden>
 

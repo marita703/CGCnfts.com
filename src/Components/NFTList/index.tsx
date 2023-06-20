@@ -17,9 +17,9 @@ const NFTList: React.FC<StackProps> = ({ direction = {} }) => {
     <Stack direction={direction} spacing={4}>
       {NFTArray.map((object) => {
         return (
-          <div
+          <Box
             key={object.name}
-            style={{
+            sx={{
               width: "18rem",
               height: "21rem",
               [theme.breakpoints.up("md")]: {
@@ -38,6 +38,7 @@ const NFTList: React.FC<StackProps> = ({ direction = {} }) => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              "&:hover": { transform: "scale(1.1)" },
             }}
           >
             <Image
@@ -53,7 +54,7 @@ const NFTList: React.FC<StackProps> = ({ direction = {} }) => {
                 zIndex: "1",
               }}
             ></Image>
-          </div>
+          </Box>
         );
       })}
     </Stack>
