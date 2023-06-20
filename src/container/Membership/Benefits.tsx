@@ -33,6 +33,12 @@ function Benefits() {
                 alignItems="center"
                 justifyContent="center"
                 spacing={3}
+                sx={{
+                  animationDuration: "0.3s",
+                  "&:hover": {
+                    transform: "scale(1.1)",
+                  },
+                }}
               >
                 <Image
                   alt={`imageof${utility.text}`}

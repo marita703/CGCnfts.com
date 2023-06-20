@@ -46,6 +46,10 @@ function OurRoots() {
                     p: "1rem",
                     alignContent: "center",
                     justifyContent: "center",
+                    animationDuration: "0.3s",
+                    "&:hover": {
+                      transform: "scale(1.1)",
+                    },
                   }}
                 >
                   <h5
@@ -77,6 +81,10 @@ function OurRoots() {
                     p: "1rem",
                     alignContent: "center",
                     justifyContent: "center",
+                    animationDuration: "0.3s",
+                    "&:hover": {
+                      transform: "scale(1.1)",
+                    },
                   }}
                 >
                   <h5
@@ -109,6 +117,10 @@ function OurRoots() {
                     p: "1rem",
                     alignContent: "center",
                     justifyContent: "center",
+                    animationDuration: "0.3s",
+                    "&:hover": {
+                      transform: "scale(1.1)",
+                    },
                   }}
                 >
                   <h5
@@ -140,6 +152,10 @@ function OurRoots() {
                     p: "1rem",
                     alignContent: "center",
                     justifyContent: "center",
+                    animationDuration: "0.3s",
+                    "&:hover": {
+                      transform: "scale(1.1)",
+                    },
                   }}
                 >
                   <h5
