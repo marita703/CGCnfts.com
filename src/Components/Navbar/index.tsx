@@ -1,5 +1,5 @@
 import { AppBar, Stack, Typography, keyframes, Hidden } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../../../public/Logo.png";
 import CircleIcon from "@mui/icons-material/Circle";
@@ -12,6 +12,8 @@ import DropDownMenuSmallScreen from "../DropDownMenuButtons/DropDownMenuSmallScr
 import ConnectWalletButton from "../Buttons/ConnectWalletButton";
 
 function Navbar() {
+  const [web3Provider, setWeb3Provider] = useState(null);
+
   return (
     <AppBar
       elevation={0}
@@ -69,7 +71,7 @@ function Navbar() {
                 {menuButton.label}
               </MenuButton>
             ))}
-            <ConnectWalletButton size="small">
+            <ConnectWalletButton size="small" setWeb3Provider={setWeb3Provider}>
               Connect Wallet
             </ConnectWalletButton>
           </Stack>

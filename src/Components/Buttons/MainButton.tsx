@@ -1,5 +1,5 @@
 import { Button, ButtonProps, keyframes, useTheme } from "@mui/material";
-import { connectWallet } from "@/src/Components/Web3Connect/web3connect";
+
 import React from "react";
 
 const resourceKeyFrame = keyframes`
@@ -46,7 +46,7 @@ const MainButton: React.FC<ButtonProps> = ({
 
         ...sx,
       }}
-      onClick={connectWallet}
+      href="/membership#joinWhitelist"
     >
       {children}
     </Button>

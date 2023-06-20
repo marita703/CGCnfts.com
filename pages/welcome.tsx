@@ -12,6 +12,7 @@ function welcome() {
         alignItems="center"
       >
         <h1>Welcome!</h1>
+        <h2> You are Connected with Address</h2>
       </Stack>
     </Layout>
   );

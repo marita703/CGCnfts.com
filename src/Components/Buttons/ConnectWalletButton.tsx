@@ -1,6 +1,7 @@
 import { Button, ButtonProps, keyframes, useTheme } from "@mui/material";
 import { connectWallet } from "@/src/Components/Web3Connect/web3connect";
-import React from "react";
+import React, { ReactNode, useState } from "react";
+import { BrowserProvider } from "ethers";
 
 const resourceKeyFrame = keyframes`
   0% {
@@ -14,42 +15,48 @@ const resourceKeyFrame = keyframes`
   }
 `;
 
-const ConnectWalletButton: React.FC<ButtonProps> = ({
+interface ConnectWalletProps {
+  children: ReactNode;
+  style?: React.CSSProperties;
+  href?: string;
+  setWeb3Provider: (provider: BrowserProvider) => void;
+  size: string;
+}
+
+const ConnectWalletButton: React.FC<ConnectWalletProps> = ({
   children,
   size = "normal",
-  sx = {},
+  style = {},
   href,
+  setWeb3Provider,
 }) => {
   const theme = useTheme();
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <Button
-      sx={{
-        bgcolor: "#4fd382",
+    <button
+      className={`button ${isHovered ? "button-hovered" : ""}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      style={{
+        backgroundColor: "#4fd382",
         letterSpacing: "0.2em",
         border: `1px solid ${theme.palette.secondary.dark}`,
         borderRadius: "8px",
-        px: "20px",
-        py: "6px",
+        paddingInline: "20px",
+        paddingTop: "6px",
+        paddingBottom: "6px",
         fontSize: size === "small" ? 14 : 16,
         fontWeight: "bold",
         color: "secondary.dark",
         textDecoration: "none",
         textTransform: "uppercase",
         animation: `${resourceKeyFrame} 3s infinite ease`,
-        "&:hover": {
-          bgcolor: "secondary.dark",
-          filter:
-            "drop-shadow(0px 8px 28px rgba(275, 74, 169, 02)) drop-shadow(0px 18px 88px rgba(275, 74, 169, 02) )",
-          border: `1px solid #3b2c34`,
-          color: "primary.light",
-        },
-
-        ...sx,
+        ...style,
       }}
-      onClick={connectWallet}
+      onClick={() => connectWallet(setWeb3Provider)}
     >
       {children}
-    </Button>
+    </button>
   );
 };
 

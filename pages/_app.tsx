@@ -8,6 +8,7 @@ import theme from "@/src/config/theme";
 import createEmotionCache from "@/src/config/theme/createEmotionCache";
 import "@/pages/css/globals.css";
 import "@/pages/css/embla.css";
+import "@/pages/css/hoveredButton.css";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
