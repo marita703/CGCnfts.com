@@ -19,7 +19,7 @@ interface ConnectWalletProps {
   children: ReactNode;
   style?: React.CSSProperties;
   href?: string;
-  setWeb3Provider: (provider: BrowserProvider) => void;
+  setWeb3Provider: (provider: any) => void;
   size: string;
 }
 
