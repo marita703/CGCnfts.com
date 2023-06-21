@@ -5,9 +5,7 @@ import web3modal from "web3modal";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-export async function connectWallet(
-  setWeb3Provider: (provider: BrowserProvider) => void
-) {
+export async function connectWallet(setWeb3Provider: (provider: any) => void) {
   try {
     const web3Modal = new web3modal();
     const connection = await web3Modal.connect();

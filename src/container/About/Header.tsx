@@ -65,7 +65,7 @@ function Header() {
               membership to help you shift your mindset, career and focus to the
               internet of the future.
             </Typography>
-            <a
+            <Link
               href="#newsletter"
               style={{
                 textAlign: "left",
@@ -77,7 +77,7 @@ function Header() {
               }}
             >
               Sign up to our newsletter to join our community
-            </a>
+            </Link>
           </Stack>
         </Grid>
       </Grid>
