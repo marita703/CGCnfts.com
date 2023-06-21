@@ -34,26 +34,38 @@ function Section3() {
         // remember why you put this
         overflow="hidden"
       >
-        <Grid item xs={12} md={4}>
-          <Typography
-            variant="h3"
-            sx={{ p: "1rem" }}
-            alignContent="center"
-            justifyContent="center"
-            fontWeight="bold"
-          >
-            CGC: Your portal to web3
-          </Typography>
+        <Grid
+          item
+          xs={12}
+          md={12}
+          sx={{
+            display: "flex",
+            direction: "row",
+            alignContent: "center",
+            justifyContent: "center",
+          }}
+        >
+          <h2>CGC: Your portal to web3</h2>
         </Grid>
 
-        <Grid item xs={12} md={8} alignContent="center" justifyContent="center">
+        <Grid item xs={12} md={12}>
           <Typography variant="body1" sx={{ p: "1rem" }}>
             CGC is the community that grants you access. The new version of the
             internet is for everyone. We offer a no-bounds, community for people
             who want to enter web3 but lack the means to get started.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={9}>
+        <Grid
+          item
+          xs={12}
+          md={12}
+          sx={{
+            display: "flex",
+            direction: "row",
+            alignContent: "center",
+            justifyContent: "center",
+          }}
+        >
           <h2
             style={{
               padding: "2rem",
@@ -113,7 +125,7 @@ function Section3() {
               p: "1rem",
               boxShadow: "0 0 88px 8px rgba(163, 77, 255, 0.3)",
               m: "2rem",
-              borderImage: "linear-gradient(to right, #efff39, #FF599C) 1",
+              borderImage: "linear-gradient(to right, #1eea4e, #FF599C) 1",
             }}
           >
             <Typography variant="body2" sx={{ p: "1rem" }} fontWeight="bold">

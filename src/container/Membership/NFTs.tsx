@@ -18,7 +18,9 @@ const NFTs: React.FC = () => {
       }}
     >
       <div>
-        <h2 id="Artwork">1000 UNIQUE MEMBERSHIP CARD UTILITY</h2>
+        <h2 style={{ marginBottom: "3em" }} id="Artwork">
+          1000 UNIQUE MEMBERSHIP CARD UTILITY
+        </h2>
       </div>
       <Hidden mdDown>
         <NFTList direction="row" />

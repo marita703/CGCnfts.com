@@ -1,4 +1,5 @@
 import { Button, ButtonProps, keyframes, useTheme } from "@mui/material";
+
 import React from "react";
 
 const resourceKeyFrame = keyframes`
@@ -45,7 +46,7 @@ const MainButton: React.FC<ButtonProps> = ({
 
         ...sx,
       }}
-      href={href}
+      href="/membership#joinWhitelist"
     >
       {children}
     </Button>

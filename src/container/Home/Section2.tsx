@@ -93,7 +93,7 @@ function Section2() {
             }deg
               ) skew(0deg, 0deg);`,
             borderImage:
-              "linear-gradient(to right, #3966FF, #FF599c, #FBC13a) 1",
+              "linear-gradient(to right, #3966FF, #FF599c, #1eea4e) 1",
             borderColor: "#FF4aa9",
           }}
         />

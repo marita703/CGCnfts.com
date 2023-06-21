@@ -13,7 +13,7 @@ const NFTArray: NFT[] = [
   {
     name: "nft2",
     url: "/Images/NFTS/Nft_2.png",
-    borderImage: "linear-gradient(to right, #3966FF, #FF599C,  #FBC13a) 1",
+    borderImage: "linear-gradient(to right, #3966FF, #FF599C,  #55d13a) 1",
   },
   {
     name: "nft3",

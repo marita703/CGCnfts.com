@@ -2,7 +2,7 @@ import theme from "@/src/config/theme";
 import { Button, ButtonProps, Link } from "@mui/material";
 import React from "react";
 
-const MenuButton: React.FC<ButtonProps> = ({ children, href }) => {
+const MenuButton: React.FC<ButtonProps> = ({ children, href, target }) => {
   return (
     <Button
       sx={{
