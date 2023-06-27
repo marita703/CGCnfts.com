@@ -41,7 +41,7 @@ function Section1() {
             <Typography sx={{ fontWeight: "bold" }}>{coin.name}</Typography>
             <Typography color="info.light">
               {" "}
-              ${coin.current_price.toFixed(3)}
+              ${coin.currentPrice.toFixed(3)}
             </Typography>
             <Typography
               sx={{
