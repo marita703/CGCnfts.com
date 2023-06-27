@@ -1,7 +1,7 @@
 import { Container, Stack, Typography, useTheme } from "@mui/material";
 import React from "react";
 import HeroImage from "public/Images/HeroImages/laquees.png";
-import Image from "next/Image";
+import Image from "next/image";
 import MainButton from "@/src/Components/Buttons/MainButton";
 import Diamond from "@/src/Components/Diamond/Diamond";
 import useScrollPosition from "@/src/hooks/useScrollPosition";
