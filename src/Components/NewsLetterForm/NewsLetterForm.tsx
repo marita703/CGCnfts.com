@@ -12,7 +12,7 @@ import { useRouter } from "next/router";
 function NewsLetterForm() {
   const router = useRouter();
 
-  const addEntry = async (e: React.FormEvent) => {
+  const addEntry = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.dir(e.target);
 
@@ -21,7 +21,7 @@ function NewsLetterForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          email: e.target.email.value,
+          email: e.currentTarget.email.value,
         }),
       });
     } catch (error) {

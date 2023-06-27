@@ -3,11 +3,12 @@ import mongoose from "mongoose";
 const { Schema } = mongoose;
 
 const whiteListSubscriptorSchema = new Schema({
-  name: { type: String, required: true },
+  fullname: { type: String, required: true },
   email: { type: String, required: true },
   ethWallet: { type: String, required: true },
   discordUserName: { type: String, required: true },
   termsAndConditions: { type: Boolean, required: true },
+  created_at: { type: Date, required: true, default: Date.now },
 });
 
 const WhiteListSubscriptor =
