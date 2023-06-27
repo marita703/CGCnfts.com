@@ -6,7 +6,7 @@ interface Coin {
   id: string;
   name: string;
   image: string;
-  currentPrice: number;
+  current_price: number;
   price_change_percentage_24h: number;
 }
 
@@ -41,7 +41,7 @@ function Section1() {
             <Typography sx={{ fontWeight: "bold" }}>{coin.name}</Typography>
             <Typography color="info.light">
               {" "}
-              ${coin.currentPrice.toFixed(3)}
+              ${coin.current_price.toFixed(3)}
             </Typography>
             <Typography
               sx={{
