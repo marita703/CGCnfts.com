@@ -17,7 +17,7 @@ type FormProps = {
 const WhiteListForm: React.FC<FormProps> = ({ formStyles }) => {
   const router = useRouter();
 
-  const addEntry = async (e: React.FormEvent) => {
+  const addEntry = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.dir(e.target);
 
@@ -26,11 +26,11 @@ const WhiteListForm: React.FC<FormProps> = ({ formStyles }) => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: e.target.name.value,
-          email: e.target.email.value,
-          ethWallet: e.target.ethWallet.value,
-          discordUserName: e.target.discordUserName.value,
-          termsAndConditions: e.target.termsAndConditions.checked,
+          fullname: e.currentTarget.fullname.value,
+          email: e.currentTarget.email.value,
+          ethWallet: e.currentTarget.ethWallet.value,
+          discordUserName: e.currentTarget.discordUserName.value,
+          termsAndConditions: e.currentTarget.termsAndConditions.checked,
         }),
       });
     } catch (error) {
@@ -42,8 +42,8 @@ const WhiteListForm: React.FC<FormProps> = ({ formStyles }) => {
 
   const [emailValue, setEmailValue] = useState("");
 
-  const handleEmailChange = (e) => {
-    const value = e.target.value;
+  const handleEmailChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const value = e.currentTarget.value;
     // Only update the email value if it includes the "@" symbol
     if (value.includes("@")) {
       setEmailValue(value);
@@ -59,7 +59,8 @@ const WhiteListForm: React.FC<FormProps> = ({ formStyles }) => {
         }}
       >
         <TextField
-          id="name"
+          id="fullname"
+          name="fullname"
           label="Enter your Name"
           variant="outlined"
           required

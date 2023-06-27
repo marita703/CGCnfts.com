@@ -1,21 +1,22 @@
 import { Button, FormControl, Stack, TextField, useTheme } from "@mui/material";
 import React, { useState } from "react";
+import { FormEventHandler } from "react";
 
 function ContactForm() {
   const theme = useTheme();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.dir(e.target.name.value);
+    console.dir(e.currentTarget.fullname.value);
 
     try {
       const response = await fetch("/api/Contacts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: e.target.name.value,
-          email: e.target.email.value,
-          message: e.target.message.value,
+          fullname: e.currentTarget.fullname.value,
+          email: e.currentTarget.email.value,
+          message: e.currentTarget.message.value,
         }),
       });
     } catch (error) {
@@ -34,7 +35,8 @@ function ContactForm() {
           }}
         >
           <TextField
-            id="name"
+            id="fullname"
+            name="fullname"
             label="Name:"
             variant="outlined"
             required
@@ -44,6 +46,7 @@ function ContactForm() {
           </TextField>
           <TextField
             id="email"
+            name="email"
             label="E-mail:"
             variant="outlined"
             required
@@ -53,6 +56,7 @@ function ContactForm() {
           </TextField>
           <TextField
             id="message"
+            name="message"
             label="Reason for dropping by:"
             variant="outlined"
             required
