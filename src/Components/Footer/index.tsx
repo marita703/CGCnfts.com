@@ -25,19 +25,34 @@ function Footer() {
         >
           {/* right side */}
           <Stack direction={{ xs: "column", sm: "row" }} spacing={3}>
-            <MenuButton href="https://discord.com/invite/YpC7qw22Pb">
+            <MenuButton
+              sx={{ fontSize: "12px" }}
+              href="https://discord.com/invite/YpC7qw22Pb"
+            >
               Discord
             </MenuButton>
-            <MenuButton href="https://twitter.com/CryptoGirlsClub">
+            <MenuButton
+              sx={{ fontSize: "12px" }}
+              href="https://twitter.com/CryptoGirlsClub"
+            >
               Twitter
             </MenuButton>
-            <MenuButton href="https://www.instagram.com/cryptogirlsclub.berlin/">
+            <MenuButton
+              sx={{ fontSize: "12px" }}
+              href="https://www.instagram.com/cryptogirlsclub.berlin/"
+            >
               Instagram
             </MenuButton>
-            <MenuButton href="https://t.me/joinchat/n6z0tNyZC3IxYmU0">
+            <MenuButton
+              sx={{ fontSize: "12px" }}
+              href="https://t.me/joinchat/n6z0tNyZC3IxYmU0"
+            >
               Telegram
             </MenuButton>
-            <MenuButton href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHlUmcO7z0NNwAAAYglFjOApldnjCXAOWb9C9cULH7X50YGKIYr4DDv7ZnETZpNOZyzFZZ_Hr_H5P2akx-TzO95JS1hnCYe5SSHcdFAGIz5nsJ33i0SFC_MdVcXlmV46-3zSJA=&original_referer=https://www.linkedin.com/company/crypto-girls-club/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fcrypto-girls-club%2F%3Foriginal_referer%3Dhttps%253A%252F%252Fcgcnfts.com%252F">
+            <MenuButton
+              sx={{ fontSize: "12px" }}
+              href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHlUmcO7z0NNwAAAYglFjOApldnjCXAOWb9C9cULH7X50YGKIYr4DDv7ZnETZpNOZyzFZZ_Hr_H5P2akx-TzO95JS1hnCYe5SSHcdFAGIz5nsJ33i0SFC_MdVcXlmV46-3zSJA=&original_referer=https://www.linkedin.com/company/crypto-girls-club/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fcrypto-girls-club%2F%3Foriginal_referer%3Dhttps%253A%252F%252Fcgcnfts.com%252F"
+            >
               Linkedin
             </MenuButton>
           </Stack>
