@@ -66,7 +66,7 @@ function Section2() {
             WEB3
           </Typography>
         </Stack>
-        <MainButton>JOIN</MainButton>
+        <MainButton sx={{ fontSize: "20px" }}>JOIN</MainButton>
         {/* Neo Objects */}
         {/* this will change the opacity until it disapears */}
         <Diamond
