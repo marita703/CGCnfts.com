@@ -43,8 +43,8 @@ function Benefits() {
                 <Image
                   alt={`imageof${utility.text}`}
                   src={utility.src}
-                  height={300}
-                  width={300}
+                  height={170}
+                  width={170}
                 />
                 <h3>{utility.text}</h3>
               </Stack>

@@ -49,7 +49,7 @@ function Section3() {
         </Grid>
 
         <Grid item xs={12} md={12}>
-          <Typography variant="body1" sx={{ p: "1rem" }}>
+          <Typography variant="body1" sx={{ m: "5rem, 2rem", p: "3rem" }}>
             CGC is the community that grants you access. The new version of the
             internet is for everyone. We offer a no-bounds, community for people
             who want to enter web3 but lack the means to get started.
@@ -72,9 +72,6 @@ function Section3() {
               background: "linear-gradient(to right, #3966FF, #FF599C) 1",
               // webkitBackgroundClip: "text",
               backgroundClip: "text",
-              fontFamily: "SourceCodePro-bold",
-              fontStyle: "oblique",
-              textTransform: "uppercase",
               color: "primary.contrastText",
               display: "block",
             }}
@@ -95,7 +92,7 @@ function Section3() {
             }}
           >
             <Typography variant="body2" sx={{ p: "1rem" }} fontWeight="bold">
-              * The future of entrepreneurship is WEB3
+              * The future of entrepreneurship is Web3
             </Typography>
           </Box>
         </Grid>
@@ -112,7 +109,7 @@ function Section3() {
             }}
           >
             <Typography variant="body2" sx={{ p: "1rem" }} fontWeight="bold">
-              * The internet changed our lives. WEB3 will do too.
+              * The internet changed our lives. Web3 will do too.
             </Typography>
           </Box>
         </Grid>
@@ -129,7 +126,7 @@ function Section3() {
             }}
           >
             <Typography variant="body2" sx={{ p: "1rem" }} fontWeight="bold">
-              * We need powerful new voices to drive the WEB3.
+              * We need powerful new voices to drive the web3.
             </Typography>
           </Box>
         </Grid>
