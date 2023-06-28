@@ -19,6 +19,7 @@ function Contact() {
           backgroundRepeatX: "no-repeat",
           backgroundRepeatY: "no-repeat",
           backgroundPositionY: "bottom",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <Typography variant="h3" sx={{ p: "2rem" }}>
