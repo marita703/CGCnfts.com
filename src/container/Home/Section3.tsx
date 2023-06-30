@@ -49,10 +49,26 @@ function Section3() {
         </Grid>
 
         <Grid item xs={12} md={12}>
-          <Typography variant="body1" sx={{ m: "5rem, 2rem", p: "3rem" }}>
+          <Typography
+            display="flex"
+            flexDirection="row"
+            justifyContent="center"
+            variant="body1"
+            sx={{ m: "2rem, 2rem", p: "1rem" }}
+          >
             CGC is the community that grants you access. The new version of the
-            internet is for everyone. We offer a no-bounds, community for people
-            who want to enter web3 but lack the means to get started.
+            internet is for everyone.
+          </Typography>
+
+          <Typography
+            display="flex"
+            flexDirection="row"
+            justifyContent="center"
+            variant="body1"
+            sx={{ m: "2rem, 2rem", p: "1rem" }}
+          >
+            We offer a no-bounds, community for people who want to enter web3
+            but lack the means to get started.
           </Typography>
         </Grid>
         <Grid
