@@ -53,17 +53,7 @@ function Section2() {
         />
         <Stack direction="row" spacing={1} sx={{ mt: -10, mb: 5 }}>
           <Typography fontSize="1em" fontWeight="bold">
-            UPGRADE YOUR
-          </Typography>
-          <Typography
-            fontSize="1em"
-            sx={{ textDecorationLine: "line-through" }}
-            fontWeight="bold"
-          >
-            WEB1 WEB2
-          </Typography>
-          <Typography fontSize="1em" fontWeight="bold">
-            WEB3
+            Welcome to Crypto Girls Club
           </Typography>
         </Stack>
         <MainButton sx={{ fontSize: "20px" }}>JOIN</MainButton>

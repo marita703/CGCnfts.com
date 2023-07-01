@@ -44,11 +44,11 @@ const NFTList: React.FC<StackProps> = ({ direction = {} }) => {
             <Image
               src={object.url}
               alt={`image of ${object.name}`}
-              width={300}
+              width={330}
               height={360}
               style={{
                 height: "90%",
-                width: "90%",
+                width: "100%",
                 border: " 1px solid #c35c91",
                 borderRadius: "10px",
                 zIndex: "1",

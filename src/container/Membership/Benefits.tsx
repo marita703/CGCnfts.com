@@ -14,7 +14,7 @@ function Benefits() {
       sx={{ m: "3rem" }}
     >
       <div>
-        <h2 id="benefits">YOUR FUTURE BENEFITS</h2>
+        <h2 id="benefits">FUTURE BENEFITS</h2>
       </div>
       <Grid container>
         {UtilityArray.map((utility) => {
