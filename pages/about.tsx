@@ -15,7 +15,7 @@ function about() {
       <Stack overflow="hidden">
         <Header />
         <OurRoots />
-
+        <VideoPartLisk />
         <CarrouselPart />
         <NewsLetterBox />
       </Stack>
