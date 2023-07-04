@@ -45,7 +45,7 @@ function Section3() {
             justifyContent: "center",
           }}
         >
-          <h2>CGC: Your portal to web3</h2>
+          <h2>CGC: Your portal to Web3</h2>
         </Grid>
 
         <Grid item xs={12} md={12}>
@@ -142,7 +142,7 @@ function Section3() {
             }}
           >
             <Typography variant="body2" sx={{ p: "1rem" }} fontWeight="bold">
-              * We need powerful new voices to drive the web3.
+              * We need powerful new voices to drive the Web3.
             </Typography>
           </Box>
         </Grid>

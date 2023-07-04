@@ -99,9 +99,9 @@ function HeaderMembership() {
                     },
                   }}
                 >
-                  We’re glad you made it.
+                  Own your power.
                 </Typography>
-                <p>
+                <p style={{ marginTop: "1rem" }}>
                   JOIN THE GENESIS MEMBERSHIP: Limited access for the first ever
                   batch of Crypto Girls Club membership collection.
                 </p>

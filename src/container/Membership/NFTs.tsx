@@ -1,4 +1,4 @@
-import { Stack, useTheme, Hidden } from "@mui/material";
+import { Stack, useTheme, Hidden, Typography } from "@mui/material";
 import React from "react";
 import NFTList from "@/src/Components/NFTList";
 
@@ -17,11 +17,26 @@ const NFTs: React.FC = () => {
         },
       }}
     >
-      <div>
+      <Stack
+        sx={{
+          display: "flex",
+          direction: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <h2 style={{ marginBottom: "3em" }} id="Artwork">
-          1000 UNIQUE MEMBERSHIP CARD UTILITY
+          Unlock strength from within.
         </h2>
-      </div>
+        <Typography sx={{ fontSize: "20px" }}>
+          Each crypto girl club artwork represents a unique personality trait
+          defining the collective of strong, ambitious women of CGC.{" "}
+        </Typography>
+        <Typography sx={{ fontSize: "20px", mt: "1rem" }}>
+          The individual traits portray thestrengths of powerful leaders: focus,
+          vision, loyalty and respect.{" "}
+        </Typography>
+      </Stack>
       <Hidden mdDown>
         <NFTList direction="row" />
       </Hidden>

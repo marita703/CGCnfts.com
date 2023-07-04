@@ -46,7 +46,7 @@ const MainButton: React.FC<ButtonProps> = ({
 
         ...sx,
       }}
-      href="/membership#joinWhitelist"
+      href="/join-the-club#joinWhitelist"
     >
       {children}
     </Button>
