@@ -38,6 +38,7 @@ const WhiteListForm: React.FC<FormProps> = ({ formStyles }) => {
       console.log(error);
     }
     target.reset();
+    router.push("/thankyou");
   };
 
   const theme = useTheme();

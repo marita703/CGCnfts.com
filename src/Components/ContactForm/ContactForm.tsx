@@ -1,8 +1,10 @@
 import { Button, FormControl, Stack, TextField, useTheme } from "@mui/material";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { FormEventHandler } from "react";
 
 function ContactForm() {
+  const router = useRouter();
   const theme = useTheme();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -24,6 +26,7 @@ function ContactForm() {
       console.log(error);
     }
     target.reset();
+    router.push("/thankyou");
   };
 
   return (

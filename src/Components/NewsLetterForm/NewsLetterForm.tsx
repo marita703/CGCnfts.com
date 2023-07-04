@@ -29,6 +29,7 @@ function NewsLetterForm() {
       console.log(error);
     }
     target.reset();
+    router.push("/thankyou");
   };
 
   const theme = useTheme();
