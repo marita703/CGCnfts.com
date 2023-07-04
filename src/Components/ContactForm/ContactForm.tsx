@@ -6,6 +6,7 @@ function ContactForm() {
   const theme = useTheme();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    const target = e.target as HTMLFormElement;
     e.preventDefault();
     console.dir(e.currentTarget.fullname.value);
 
@@ -22,6 +23,7 @@ function ContactForm() {
     } catch (error) {
       console.log(error);
     }
+    target.reset();
   };
 
   return (

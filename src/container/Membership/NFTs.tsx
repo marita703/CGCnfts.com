@@ -25,7 +25,10 @@ const NFTs: React.FC = () => {
           alignItems: "center",
         }}
       >
-        <h2 style={{ marginBottom: "3em" }} id="Artwork">
+        <h2
+          style={{ marginBottom: "3em", textTransform: "uppercase" }}
+          id="Artwork"
+        >
           Unlock strength from within.
         </h2>
         <Typography sx={{ fontSize: "20px" }}>

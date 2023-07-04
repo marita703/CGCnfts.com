@@ -18,6 +18,7 @@ const WhiteListForm: React.FC<FormProps> = ({ formStyles }) => {
   const router = useRouter();
 
   const addEntry = async (e: React.FormEvent<HTMLFormElement>) => {
+    const target = e.target as HTMLFormElement;
     e.preventDefault();
     console.dir(e.target);
 
@@ -36,6 +37,7 @@ const WhiteListForm: React.FC<FormProps> = ({ formStyles }) => {
     } catch (error) {
       console.log(error);
     }
+    target.reset();
   };
 
   const theme = useTheme();
