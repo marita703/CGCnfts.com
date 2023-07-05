@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 
 import React, { useEffect, useRef } from "react";
-import VideoPartVictoria from "./VideoPartVictoria";
+import VideoPartVictoria from "@/src/container/Home/VideoPartVictoria";
 
 function Section3() {
   const theme = useTheme();
