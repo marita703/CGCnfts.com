@@ -13,6 +13,7 @@ function NewsLetterForm() {
   const router = useRouter();
 
   const addEntry = async (e: React.FormEvent<HTMLFormElement>) => {
+    const target = e.target as HTMLFormElement;
     e.preventDefault();
     console.dir(e.target);
 
@@ -27,6 +28,8 @@ function NewsLetterForm() {
     } catch (error) {
       console.log(error);
     }
+    target.reset();
+    router.push("/thankyou");
   };
 
   const theme = useTheme();

@@ -89,7 +89,7 @@ function HeaderMembership() {
                   fontFamily="SourceCodePro-semibold"
                   sx={{
                     [theme.breakpoints.down("sm")]: {
-                      fontSize: "25px",
+                      fontSize: "30px",
                     },
                     [theme.breakpoints.up("sm")]: {
                       fontSize: "40px",
@@ -99,9 +99,9 @@ function HeaderMembership() {
                     },
                   }}
                 >
-                  We’re glad you made it.
+                  Own your power.
                 </Typography>
-                <p>
+                <p style={{ marginTop: "1rem" }}>
                   JOIN THE GENESIS MEMBERSHIP: Limited access for the first ever
                   batch of Crypto Girls Club membership collection.
                 </p>

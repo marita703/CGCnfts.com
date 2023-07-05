@@ -7,8 +7,8 @@ interface MenuItem {
 const menuButtons: MenuItem[] = [
   { label: "HOME", href: "/", value: "Home" },
   { label: "ABOUT", href: "/about", value: "About" },
+  { label: "MEMBERSHIP", href: "/join-the-club", value: "Membership" },
   { label: "CONTACT", href: "/contact", value: "Contact" },
-  { label: "MEMBERSHIP", href: "/membership", value: "Membership" },
 ];
 
 export default menuButtons;

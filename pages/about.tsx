@@ -7,6 +7,7 @@ import OurRoots from "@/src/container/About/OurRoots";
 import Header from "@/src/container/About/Header";
 import NewsLetterBox from "@/src/Components/NewsLetterBox/NewsLetterBox";
 import CarrouselPart from "@/src/container/About/CarrouselPart";
+import VideoPartLisk from "@/src/container/About/VideoPartLisk";
 
 function about() {
   return (
@@ -14,6 +15,7 @@ function about() {
       <Stack overflow="hidden">
         <Header />
         <OurRoots />
+        <VideoPartLisk />
         <CarrouselPart />
         <NewsLetterBox />
       </Stack>
