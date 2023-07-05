@@ -6,8 +6,18 @@ function VideoPartLisk() {
   const theme = useTheme();
   return (
     <>
-      <Stack sx={{ m: "3rem", p: "3rem" }}>
-        <Box sx={{ m: "3rem" }}>
+      <Stack
+        sx={{
+          m: "2rem",
+          [theme.breakpoints.up("md")]: {
+            m: "3rem 10rem",
+          },
+          [theme.breakpoints.up("lg")]: {
+            m: "3rem 20rem",
+          },
+        }}
+      >
+        <Box>
           <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
             <iframe
               src="https://player.vimeo.com/video/842203549?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -19,8 +29,8 @@ function VideoPartLisk() {
                 left: 0,
                 width: "100%",
                 height: "100%",
-                border: "2px solid transparent",
-                borderRadius: "10px",
+                border: "3px solid transparent",
+                borderRadius: "20px",
               }}
               title="CGC_Womans_Day_20230320_02 (2)"
             ></iframe>

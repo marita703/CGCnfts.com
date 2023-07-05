@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 
 import React, { useEffect, useRef } from "react";
+import VideoPartVictoria from "./VideoPartVictoria";
 
 function Section3() {
   const theme = useTheme();
@@ -20,7 +21,7 @@ function Section3() {
       alignItems="center"
       alignContent="center"
       justifyItems="center"
-      margin="3rem"
+      margin="auto"
     >
       <Grid
         container
@@ -43,6 +44,8 @@ function Section3() {
             direction: "row",
             alignContent: "center",
             justifyContent: "center",
+            p: "2rem",
+            m: "0rem 2rem",
           }}
         >
           <h2>CGC: Your portal to Web3</h2>
@@ -54,7 +57,7 @@ function Section3() {
             flexDirection="row"
             justifyContent="center"
             variant="body1"
-            sx={{ m: "2rem, 2rem", p: "1rem" }}
+            sx={{ m: "1rem 2rem" }}
           >
             CGC is the community that grants you access. The new version of the
             internet is for everyone.
@@ -65,7 +68,7 @@ function Section3() {
             flexDirection="row"
             justifyContent="center"
             variant="body1"
-            sx={{ m: "2rem, 2rem", p: "1rem" }}
+            sx={{ m: "2rem 2rem" }}
           >
             We offer a no-bounds, community for people who want to enter web3
             but lack the means to get started.
@@ -94,6 +97,22 @@ function Section3() {
           >
             Why are we doing this?
           </h2>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={12}
+          sx={{
+            m: "2rem",
+            [theme.breakpoints.up("md")]: {
+              m: "3rem 10rem",
+            },
+            [theme.breakpoints.up("lg")]: {
+              m: "3rem 20rem",
+            },
+          }}
+        >
+          <VideoPartVictoria />
         </Grid>
         <Grid item xs={12} md={4}>
           <Box
