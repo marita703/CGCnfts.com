@@ -17,7 +17,7 @@ const UtilityArray: Utility[] = [
     src: "/Images/UtilityImages/mentoring2.png",
   },
   {
-    text: "NFT-holder events including dinners, speaking opportunities & magazine placements.",
+    text: "NFT-holder events including dinners, speaking opportunities & magazine placements",
     src: "/Images/UtilityImages/Event2.png",
   },
   {

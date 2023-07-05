@@ -20,7 +20,7 @@ function OurRoots() {
             textAlign: "justify",
             wordBreak: "break-word",
             whiteSpace: "break-spaces",
-            mb: "4rem",
+            mb: "1rem",
             [theme.breakpoints.down("md")]: {
               fontSize: "16px",
             },
@@ -28,10 +28,23 @@ function OurRoots() {
         >
           Crypto Girls Club is a community driven by the collective belief that,
           together, we can shape the future of entrepreneurship, the internet
-          and society as a whole. But to get there, we need leaders, thinkers
-          and builders like never before. In short, we need you. Let’s break the
-          cycle of inequality, together. Here’s how we’ll support you to bring
-          the change we need in Web3.
+          and society as a whole.
+        </Typography>
+        <Typography
+          sx={{
+            textAlign: "justify",
+            wordBreak: "break-word",
+            whiteSpace: "break-spaces",
+            mb: "4rem",
+            [theme.breakpoints.down("md")]: {
+              fontSize: "16px",
+            },
+          }}
+        >
+          But to get there, we need leaders, thinkers and builders like never
+          before. In short, we need you. Let’s break the cycle of inequality,
+          together. Here’s how we’ll support you to bring the change we need in
+          Web3.
         </Typography>
 
         <Grid container spacing={10} sx={{}}>
@@ -93,7 +106,7 @@ function OurRoots() {
                       padding: "0.5rem",
                     }}
                   >
-                    Mentoring & matchmaking schemes
+                    Mentoring & matchmaking
                   </h5>
                   <p
                     style={{

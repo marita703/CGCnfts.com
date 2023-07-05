@@ -36,8 +36,8 @@ const NFTs: React.FC = () => {
           defining the collective of strong, ambitious women of CGC.{" "}
         </Typography>
         <Typography sx={{ fontSize: "20px", mt: "1rem" }}>
-          The individual traits portray thestrengths of powerful leaders: focus,
-          vision, loyalty and respect.{" "}
+          The individual traits portray the strengths of powerful leaders:
+          focus, vision, loyalty and respect.{" "}
         </Typography>
       </Stack>
       <Hidden mdDown>
