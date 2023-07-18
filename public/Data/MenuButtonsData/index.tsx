@@ -9,6 +9,7 @@ const menuButtons: MenuItem[] = [
   { label: "ABOUT", href: "/about", value: "About" },
   { label: "CONTACT", href: "/contact", value: "Contact" },
   { label: "MEMBERSHIP", href: "/membership", value: "Membership" },
+  { label: "MEET THE TEAM", href: "/team", value: "Meet the team" },
 ];
 
 export default menuButtons;
