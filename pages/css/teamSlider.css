@@ -1,0 +1,25 @@
+.slide-content {
+  margin: 0px 40px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: rgba(100, 98, 98, 0.359);
+}
+
+.image-content,
+.card-content {
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  padding: 3px;
+}
+
+.card-imge .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
