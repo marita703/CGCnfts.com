@@ -10,6 +10,7 @@ import "@/pages/css/globals.css";
 import "@/pages/css/embla.css";
 import "@/pages/css/hoveredButton.css";
 import "@/pages/css/teamSlider.css";
+import "@/pages/css/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -23,6 +24,7 @@ export default function MyApp(props: MyAppProps) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
+        <title>Cryptogirlsculb</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content="https://www.cryptogirlsclub.org" />

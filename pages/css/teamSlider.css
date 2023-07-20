@@ -1,3 +1,9 @@
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px;
+}
+
 .slide-content {
   margin: 0px 40px;
 }
@@ -19,6 +25,7 @@
 .image-content {
   position: relative;
   row-gap: 5px;
+  padding: 25px 0;
 }
 
 .overlay {
