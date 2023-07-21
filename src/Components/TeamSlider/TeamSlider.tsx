@@ -2,13 +2,25 @@ import React from "react";
 import TeamData from "@/public/Data/TeamData";
 import Image from "next/image";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/bundle";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 function TeamSlider() {
   return (
-    <div className="slide-container">
+    <Swiper
+      spaceBetween={25}
+      slidesPerView={3}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log("slide change")}
+      className="slide-container"
+    >
       {TeamData.map((team) => {
         return (
-          <div key={team.name} className="slide-content">
+          <SwiperSlide key={team.name} className="slide-content ">
             <div className="card-wrapper">
               <div className="card">
                 <div className="image-content">
@@ -16,8 +28,8 @@ function TeamSlider() {
                   <div className="card-image">
                     <Image
                       className="card-img"
-                      width={150}
-                      height={150}
+                      width={320}
+                      height={320}
                       alt="Team card"
                       src={team.url}
                     ></Image>
@@ -32,10 +44,10 @@ function TeamSlider() {
                 </div>
               </div>
             </div>
-          </div>
+          </SwiperSlide>
         );
       })}
-    </div>
+    </Swiper>
   );
 }
 

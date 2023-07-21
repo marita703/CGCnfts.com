@@ -1,7 +1,6 @@
 .slide-container {
   max-width: 1120px;
   width: 100%;
-  padding: 40px;
 }
 
 .slide-content {
@@ -11,21 +10,19 @@
 .card {
   width: 320px;
   border-radius: 25px;
-  background-color: #64626240;
 }
 
-.image-content,
 .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 14px;
+  background-color: #3966ff;
+  border-radius: 0 0 25px 25px;
 }
 
 .image-content {
   position: relative;
-  row-gap: 5px;
-  padding: 25px 0;
 }
 
 .overlay {
@@ -34,15 +31,13 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #250d3a;
+  background-color: rgba(76, 74, 74, 0.096);
   border-radius: 25px 25px 0 25px;
+  backdrop-filter: 8px;
 }
 
 .card-image {
   position: relative;
-  height: 150px;
-  width: 150px;
-  padding: 3px;
 }
 
 .name {

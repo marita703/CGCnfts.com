@@ -1,5 +1,6 @@
 import * as React from "react";
 import Head from "next/head";
+import Script from "next/script";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -10,7 +11,6 @@ import "@/pages/css/globals.css";
 import "@/pages/css/embla.css";
 import "@/pages/css/hoveredButton.css";
 import "@/pages/css/teamSlider.css";
-import "@/pages/css/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
