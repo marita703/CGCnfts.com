@@ -1,5 +1,5 @@
 .slide-container {
-  max-width: 1120px;
+  max-width: 440px;
   width: 100%;
 }
 
@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   padding: 10px 14px;
-  background-color: #3966ff;
+  background-color: #c526bd;
   border-radius: 0 0 25px 25px;
 }
 
@@ -31,7 +31,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(76, 74, 74, 0.096);
+  background-color: slide-container);
   border-radius: 25px 25px 0 25px;
   backdrop-filter: 8px;
 }
@@ -70,4 +70,29 @@
 
 .LinkedIn:hover {
   color: #8e076c;
+}
+
+
+@media screen and (min-width: 640px) {
+  .slide-container {
+    max-width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slide-container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .slide-container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slide-container {
+    max-width: 1200px;
+  }
 }

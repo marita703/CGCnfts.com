@@ -3,20 +3,46 @@ import TeamData from "@/public/Data/TeamData";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/bundle";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper/modules";
 
 function TeamSlider() {
   return (
     <Swiper
-      spaceBetween={25}
-      slidesPerView={3}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-      className="slide-container"
+      breakpoints={{
+        350: {
+          width: 350,
+          slidesPerView: 1,
+        },
+        // when window width is >= 640px
+        640: {
+          width: 640,
+          slidesPerView: 2,
+        },
+        // when window width is >= 768px
+        768: {
+          width: 768,
+          slidesPerView: 3,
+        },
+        900: {
+          width: 900,
+          slidesPerView: 3,
+        },
+        1200: {
+          width: 1200,
+          slidesPerView: 3,
+        },
+      }}
+      spaceBetween={20}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[Pagination]}
+      className="slide-container mySwiper"
     >
       {TeamData.map((team) => {
         return (
