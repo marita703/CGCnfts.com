@@ -7,22 +7,22 @@ interface teamData {
 
 const TeamData: teamData[] = [
   {
-    name: "Victoria Hoffman",
-    url: "/Images/TeamImages/26.png",
-    rol: "Co-founder",
-    linkedin: "https://de.linkedin.com/in/victoriahoffmann/",
-  },
-  {
-    name: "Rebekka Revel",
-    url: "/Images/TeamImages/23.png",
-    rol: "Community Manager",
-    linkedin: "https://www.linkedin.com/in/rebekkar/",
-  },
-  {
     name: "Zoe Faircloth",
     url: "/Images/TeamImages/25.png",
     rol: "Co-founder",
     linkedin: "https://www.linkedin.com/in/zoe-faircloth/",
+  },
+  {
+    name: "Jean Feier",
+    url: "/Images/TeamImages/28.png",
+    rol: "Managing Director",
+    linkedin: "https://www.linkedin.com/in/jeanine-feierfeil/",
+  },
+  {
+    name: "Victoria Hoffman",
+    url: "/Images/TeamImages/26.png",
+    rol: "Co-founder",
+    linkedin: "https://de.linkedin.com/in/victoriahoffmann/",
   },
   {
     name: "Mar",
@@ -36,11 +36,12 @@ const TeamData: teamData[] = [
     rol: "Community Manager",
     linkedin: "https://www.linkedin.com/in/marta-poltorak/",
   },
+
   {
-    name: "Jean Feier",
-    url: "/Images/TeamImages/28.png",
-    rol: "Managing Director",
-    linkedin: "https://www.linkedin.com/in/jeanine-feierfeil/",
+    name: "Rebekka Revel",
+    url: "/Images/TeamImages/23.png",
+    rol: "Community Manager",
+    linkedin: "https://www.linkedin.com/in/rebekkar/",
   },
   {
     name: "Elis Yurtsever",
@@ -53,7 +54,6 @@ const TeamData: teamData[] = [
     url: "/Images/TeamImages/22.png",
     rol: "Community Manager",
     linkedin: "https://www.linkedin.com/in/julianeverissimo/",
-
   },
 ];
 
