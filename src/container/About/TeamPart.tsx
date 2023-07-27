@@ -1,6 +1,7 @@
 import React from "react";
-import { Stack, useTheme } from "@mui/material";
+import { Stack, Typography, useTheme } from "@mui/material";
 import TeamSlider from "@/src/Components/TeamSlider/TeamSlider";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 function TeamPart() {
   const theme = useTheme();
@@ -16,6 +17,16 @@ function TeamPart() {
       >
         <h2 style={{ marginBottom: "3rem" }}>Meet the Team</h2>
         <TeamSlider />
+        <Typography
+          alignSelf="flex-end"
+          color="#e0578e"
+          fontSize="25px"
+          mt="10px"
+          textAlign="center"
+          alignItems="center"
+        >
+          Swipe right <ArrowRightAltIcon />
+        </Typography>
       </Stack>
       <hr
         style={{
