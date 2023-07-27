@@ -53,6 +53,7 @@ const TeamData: teamData[] = [
     url: "/Images/TeamImages/22.png",
     rol: "Community Manager",
     linkedin: "https://www.linkedin.com/in/julianeverissimo/",
+
   },
 ];
 
