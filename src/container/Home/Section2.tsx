@@ -6,6 +6,7 @@ import MainButton from "@/src/Components/Buttons/MainButton";
 import Diamond from "@/src/Components/Diamond/Diamond";
 import useScrollPosition from "@/src/hooks/useScrollPosition";
 import { BorderColor } from "@mui/icons-material";
+import Hidden from "@mui/material";
 
 function Section2() {
   const theme = useTheme();
@@ -56,7 +57,9 @@ function Section2() {
             Welcome to Crypto Girls Club
           </Typography>
         </Stack>
+
         <MainButton sx={{ fontSize: "20px" }}>JOIN</MainButton>
+
         {/* Neo Objects */}
         {/* this will change the opacity until it disapears */}
         <Diamond
