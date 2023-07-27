@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 function TeamSlider() {
   return (
@@ -18,6 +18,7 @@ function TeamSlider() {
       pagination={{
         clickable: true,
       }}
+      navigation={true}
       breakpoints={{
         640: {
           slidesPerView: 2,
@@ -29,11 +30,12 @@ function TeamSlider() {
         },
         1024: {
           slidesPerView: 5,
-          spaceBetween: 50,
+          spaceBetween: 100,
         },
       }}
-      modules={[Pagination]}
+      modules={[Pagination, Navigation]}
       className="slide-container mySwiper"
+      watchOverflow
     >
       {TeamData.map((team) => {
         return (
@@ -55,7 +57,11 @@ function TeamSlider() {
                 <div className="card-content">
                   <h2 className="name">{team.name}</h2>
                   <h3 className="rol">{team.rol}</h3>
-                  <Link href="/" className="LinkedIn">
+                  <Link
+                    href={team.linkedin}
+                    className="LinkedIn"
+                    target="blank"
+                  >
                     Linkedin
                   </Link>
                 </div>

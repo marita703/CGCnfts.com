@@ -1,7 +1,6 @@
 import React from "react";
 import { Stack, useTheme } from "@mui/material";
 import TeamSlider from "@/src/Components/TeamSlider/TeamSlider";
-import TeamSliderButtonNext from "@/src/Components/Buttons/TeamSliderButtonNext";
 
 function TeamPart() {
   const theme = useTheme();
@@ -15,10 +14,8 @@ function TeamPart() {
           m: "3rem",
         }}
       >
+        <h2 style={{ marginBottom: "3rem" }}>Meet the Team</h2>
         <TeamSlider />
-        <Stack direction="row">
-          <TeamSliderButtonNext />
-        </Stack>
       </Stack>
       <hr
         style={{
