@@ -1,5 +1,6 @@
 import * as React from "react";
 import Head from "next/head";
+import Script from "next/script";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -9,6 +10,7 @@ import createEmotionCache from "@/src/config/theme/createEmotionCache";
 import "@/pages/css/globals.css";
 import "@/pages/css/embla.css";
 import "@/pages/css/hoveredButton.css";
+import "@/pages/css/teamSlider.css";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -22,6 +24,7 @@ export default function MyApp(props: MyAppProps) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
+        <title>Cryptogirlsculb</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content="https://www.cryptogirlsclub.org" />
