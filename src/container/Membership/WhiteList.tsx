@@ -1,6 +1,9 @@
 import React from "react";
 import WhiteListForm from "@/src/Components/WhiteListForm/WhiteListForm";
-import { Box, Grid, Stack } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
+import Link from "next/link";
+import Image from "next/image";
+import DiscordLogo from "../../../public/Images/DiscordLogo/photo_5381914521393813540_y.jpg";
 
 function WhiteList() {
   return (
@@ -12,19 +15,17 @@ function WhiteList() {
       justifyContent="center"
     >
       <div id="joinWhitelist">
-        <h2>Join the Whitelist</h2>
+        <h2>Join us</h2>
       </div>
-      <Grid container spacing={4}>
-        <Grid item xs={12} md={4} alignContent="center">
-          <p>
-            CGC NFTs are dropping soon and you’re one of the first to know. Fill
-            out the following form to join the exclusive whitelist.
-          </p>
-        </Grid>
-        <Grid item xs={12} md={8}>
-          <WhiteListForm formStyles={{ width: "100%" }} />
-        </Grid>
-      </Grid>
+      <Link href="https://discord.com/invite/YpC7qw22Pb" target="blank">
+        <Image
+          src={DiscordLogo}
+          alt="discord logo"
+          height={500}
+          width={500}
+          style={{ height: "100%", width: "100%" }}
+        />
+      </Link>
     </Stack>
   );
 }
