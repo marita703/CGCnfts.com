@@ -10,12 +10,11 @@ function WhiteList() {
     <Stack
       margin="3rem"
       direction="column"
-      spacing={2}
       alignItems="center"
       justifyContent="center"
     >
       <div id="joinWhitelist">
-        <h2>Launch Comming soon</h2>
+        <h2>Launching Soon</h2>
       </div>
 
       <div
@@ -45,6 +44,12 @@ function WhiteList() {
 
       <Stack>
         <Grid container>
+          <Grid item xs={6}>
+            <Typography textAlign="end">Launch date: &nbsp;</Typography>
+          </Grid>
+          <Grid xs={6}>
+            <Typography>12.09.2023</Typography>
+          </Grid>
           <Grid item xs={6}>
             <Typography textAlign="end"> Allowlist: &nbsp;</Typography>
           </Grid>
