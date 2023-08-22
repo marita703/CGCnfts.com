@@ -10,22 +10,64 @@ function WhiteList() {
     <Stack
       margin="3rem"
       direction="column"
-      spacing={10}
+      spacing={2}
       alignItems="center"
       justifyContent="center"
     >
       <div id="joinWhitelist">
-        <h2>Join us</h2>
+        <h2>Launch Comming soon</h2>
       </div>
-      <Link href="https://discord.com/invite/YpC7qw22Pb" target="blank">
-        <Image
-          src={DiscordLogo}
-          alt="discord logo"
-          height={500}
-          width={500}
-          style={{ height: "100%", width: "100%" }}
+
+      <div
+        style={{
+          position: "relative",
+          padding: "56.25% 0 0 0",
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <iframe
+          src="https://mint.webmint.io/mint-module/cgc-membership"
+          frameBorder="0px"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            border: "3px solid transparent",
+            borderRadius: "20px",
+          }}
         />
-      </Link>
+      </div>
+
+      <Stack>
+        <Grid container>
+          <Grid item xs={6}>
+            <Typography textAlign="end"> Allowlist: &nbsp;</Typography>
+          </Grid>
+          <Grid xs={6}>
+            <Typography>16:00 CET</Typography>
+          </Grid>
+          <Grid item xs={6}>
+            <Typography textAlign="end"> Main mint: &nbsp;</Typography>
+          </Grid>
+          <Grid xs={6}>
+            <Typography>17:00 CET</Typography>
+          </Grid>
+          <Grid item xs={6}>
+            <Typography textAlign="end"> Price: &nbsp;</Typography>
+          </Grid>
+          <Grid xs={6}>
+            <Typography>99 MATIC</Typography>
+          </Grid>
+          <Grid xs={12} textAlign="center" sx={{ mt: "1rem" }}>
+            <Typography> Come back to this page later!</Typography>
+          </Grid>
+        </Grid>
+      </Stack>
     </Stack>
   );
 }
