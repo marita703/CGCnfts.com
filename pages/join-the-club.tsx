@@ -10,10 +10,9 @@ function Membership() {
   return (
     <Layout>
       <Stack overflow="hidden">
-        <HeaderMembership />
+        <WhiteList />
         <NFTs />
         <Benefits />
-        <WhiteList />
       </Stack>
     </Layout>
   );
