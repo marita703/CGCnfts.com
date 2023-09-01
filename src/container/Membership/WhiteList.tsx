@@ -12,6 +12,7 @@ function WhiteList() {
       direction="column"
       alignItems="center"
       justifyContent="center"
+      spacing={2}
     >
       <div id="joinWhitelist">
         <h2>Launching Soon</h2>
