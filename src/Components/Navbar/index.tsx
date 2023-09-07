@@ -7,12 +7,24 @@ import MenuButton from "../Buttons/MenuButton";
 import MainButton from "../Buttons/MainButton";
 import menuButtons from "@/public/Data/MenuButtonsData";
 import Link from "next/link";
+import { ethers } from "ethers";
 
 import DropDownMenuSmallScreen from "../DropDownMenuButtons/DropDownMenuSmallScreen";
 import ConnectWalletButton from "../Buttons/ConnectWalletButton";
 
 function Navbar() {
-  const [web3Provider, setWeb3Provider] = useState(null);
+  const [web3Provider, setWeb3Provider] = useState<any>(null);
+
+  const addressString = web3Provider.toString();
+
+  function shortAddress(addressString: string): string {
+    const first2: string = addressString.slice(0, 2);
+    const last4: string = addressString.slice(-4);
+    const truncatedString = first2 + "..." + last4;
+    return truncatedString;
+  }
+
+  const truncatedAddress = shortAddress(addressString);
 
   return (
     <AppBar
@@ -72,7 +84,7 @@ function Navbar() {
               </MenuButton>
             ))}
             <ConnectWalletButton size="small" setWeb3Provider={setWeb3Provider}>
-              Connect Wallet
+              {!web3Provider ? "Connect Wallet" : truncatedAddress}
             </ConnectWalletButton>
           </Stack>
         </Hidden>

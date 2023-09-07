@@ -13,7 +13,7 @@ export async function connectWallet(setWeb3Provider: (provider: any) => void) {
     const address = await signer.getAddress();
     console.log("addres: ", address);
     if (provider) {
-      setWeb3Provider(provider);
+      setWeb3Provider(address);
     }
   } catch (err) {
     console.error(err);
