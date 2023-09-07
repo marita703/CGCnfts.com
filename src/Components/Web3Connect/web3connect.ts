@@ -1,9 +1,8 @@
-import { nftCollectionContract } from "@/src/config/Addresses/nftCollectionAddress";
-import NFTABI from "@/src/ABIS/nftCollectionAbi.json";
-import { BrowserProvider, ethers } from "ethers";
+import { BrowserProvider, ethers, Signer } from "ethers";
 import web3modal from "web3modal";
-import { useRouter } from "next/router";
-import { useState } from "react";
+
+let signer: Signer | null = null;
+let address: string | null = null;
 
 export async function connectWallet(setWeb3Provider: (provider: any) => void) {
   try {
@@ -20,3 +19,5 @@ export async function connectWallet(setWeb3Provider: (provider: any) => void) {
     console.error(err);
   }
 }
+
+export { signer, address };

@@ -13,6 +13,7 @@
     "@emotion/react": "^11.11.0",
     "@emotion/server": "latest",
     "@emotion/styled": "^11.11.0",
+    "@guildxyz/sdk": "^1.1.1",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.0",
     "@types/express": "^4.17.17",
