@@ -1,9 +1,6 @@
 import React from "react";
-import WhiteListForm from "@/src/Components/WhiteListForm/WhiteListForm";
 import { Box, Grid, Stack, Typography } from "@mui/material";
-import Link from "next/link";
-import Image from "next/image";
-import DiscordLogo from "../../../public/Images/DiscordLogo/photo_5381914521393813540_y.jpg";
+import MintButton from "@/src/Components/Buttons/MintButton";
 
 function WhiteList() {
   return (
@@ -12,11 +9,12 @@ function WhiteList() {
       direction="column"
       alignItems="center"
       justifyContent="center"
-      spacing={2}
     >
-      <div id="joinWhitelist">
+      <div id="joinWhitelist" style={{ margin: "1rem" }}>
         <h2>Launching 12.09</h2>
       </div>
+
+      <MintButton sx={{ margin: "2rem" }} />
 
       <Stack>
         <Grid container>
