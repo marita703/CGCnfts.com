@@ -60,6 +60,20 @@ export default function MyApp(props: MyAppProps) {
           name="description"
           content="The OG women in web3 community in Europe."
         />
+        {/* <!-- Google tag (gtag.js) --> */}
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BLGEL8RXRV"
+        />
+        <script>
+          {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BLGEL8RXRV');`}
+        </script>
       </Head>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}

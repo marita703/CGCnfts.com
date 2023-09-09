@@ -13,11 +13,15 @@ const resourceKeyFrame = keyframes`
   }
 `;
 
-const MintButton: React.FC<ButtonProps> = ({
-  size = "normal",
-  sx = {},
-  href,
-}) => {
+const MintButton: React.FC<ButtonProps> = ({ size = "normal", sx = {} }) => {
+  const openInNewWindow = (url: string) => {
+    window.open(url, "_blank");
+  };
+
+  const handleButtonClick = () => {
+    const url = "https://mint.webmint.io/cgc-membership";
+    openInNewWindow(url);
+  };
   return (
     <Button
       sx={{
@@ -40,7 +44,7 @@ const MintButton: React.FC<ButtonProps> = ({
         },
         ...sx,
       }}
-      href="https://mint.webmint.io/cgc-membership"
+      onClick={handleButtonClick}
     >
       Mint Now!
     </Button>

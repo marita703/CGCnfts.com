@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import MintButton from "@/src/Components/Buttons/MintButton";
+import Link from "next/link";
 
 function WhiteList() {
   return (
@@ -43,7 +44,18 @@ function WhiteList() {
             <Typography>99 MATIC</Typography>
           </Grid>
           <Grid xs={12} textAlign="center" sx={{ mt: "1rem" }}>
-            <Typography> Come back to this page later!</Typography>
+            <Typography>
+              {" "}
+              Do not forget to check your newly minted NFT on{" "}
+              <Link
+                href="https://opensea.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#2567ff", textDecoration: "underline" }}
+              >
+                OpenSea
+              </Link>
+            </Typography>
           </Grid>
         </Grid>
       </Stack>
