@@ -1,6 +1,6 @@
 import { Button, ButtonProps, keyframes, useTheme } from "@mui/material";
 import React, { ReactNode, useState, useEffect } from "react";
-import { ethers, Bytes, JsonRpcSigner } from "ethers";
+import { ethers, JsonRpcSigner } from "ethers";
 import { guild, user, role, Requirement } from "@guildxyz/sdk";
 import {
   signer,
