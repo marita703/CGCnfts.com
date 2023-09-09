@@ -1,9 +1,7 @@
 import React from "react";
-import WhiteListForm from "@/src/Components/WhiteListForm/WhiteListForm";
 import { Box, Grid, Stack, Typography } from "@mui/material";
+import MintButton from "@/src/Components/Buttons/MintButton";
 import Link from "next/link";
-import Image from "next/image";
-import DiscordLogo from "../../../public/Images/DiscordLogo/photo_5381914521393813540_y.jpg";
 
 function WhiteList() {
   return (
@@ -12,36 +10,12 @@ function WhiteList() {
       direction="column"
       alignItems="center"
       justifyContent="center"
-      spacing={2}
     >
-      <div id="joinWhitelist">
-        <h2>Launching Soon</h2>
+      <div id="joinWhitelist" style={{ margin: "1rem" }}>
+        <h2>Launching 12.09</h2>
       </div>
 
-      <div
-        style={{
-          position: "relative",
-          padding: "56.25% 0 0 0",
-          width: "100%",
-          height: "100%",
-        }}
-      >
-        <iframe
-          src="https://mint.webmint.io/mint-module/cgc-membership"
-          frameBorder="0px"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            border: "3px solid transparent",
-            borderRadius: "20px",
-          }}
-        />
-      </div>
+      <MintButton sx={{ margin: "2rem" }} />
 
       <Stack>
         <Grid container>
@@ -70,7 +44,18 @@ function WhiteList() {
             <Typography>99 MATIC</Typography>
           </Grid>
           <Grid xs={12} textAlign="center" sx={{ mt: "1rem" }}>
-            <Typography> Come back to this page later!</Typography>
+            <Typography>
+              {" "}
+              Do not forget to check your newly minted NFT on{" "}
+              <Link
+                href="https://opensea.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#2567ff", textDecoration: "underline" }}
+              >
+                OpenSea
+              </Link>
+            </Typography>
           </Grid>
         </Grid>
       </Stack>
