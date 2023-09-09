@@ -15,16 +15,14 @@ import ConnectWalletButton from "../Buttons/ConnectWalletButton";
 function Navbar() {
   const [web3Provider, setWeb3Provider] = useState<any>(null);
 
-  const addressString = web3Provider.toString();
-
   function shortAddress(addressString: string): string {
-    const first2: string = addressString.slice(0, 2);
-    const last4: string = addressString.slice(-4);
-    const truncatedString = first2 + "..." + last4;
+    const first4: string = addressString?.slice(0, 4);
+    const last4: string = addressString?.slice(-4);
+    const truncatedString = first4 + "..." + last4;
     return truncatedString;
   }
 
-  const truncatedAddress = shortAddress(addressString);
+  const truncatedAddress = shortAddress(web3Provider);
 
   return (
     <AppBar
@@ -91,7 +89,10 @@ function Navbar() {
 
         <Hidden mdUp>
           <Stack direction="row" alignItems="center" spacing={2}>
-            <DropDownMenuSmallScreen />
+            <DropDownMenuSmallScreen
+              setWeb3Provider={setWeb3Provider}
+              web3Provider={web3Provider}
+            />
           </Stack>
         </Hidden>
       </Stack>

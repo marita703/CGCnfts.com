@@ -27,7 +27,7 @@ interface ConnectWalletProps {
   setWeb3Provider: (provider: any) => void;
 }
 
-const YOUR_NFT_CONTRACT_ADDRESS = "0x123..."; // Replace with your NFT contract address
+const YOUR_NFT_CONTRACT_ADDRESS = "0xa35321b333Da28770BAfe297a1F66BE48061363b"; // Replace with your NFT contract address
 
 const ConnectWalletButton: React.FC<ConnectWalletProps> = ({
   children,

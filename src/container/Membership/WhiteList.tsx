@@ -15,32 +15,7 @@ function WhiteList() {
       spacing={2}
     >
       <div id="joinWhitelist">
-        <h2>Launching Soon</h2>
-      </div>
-
-      <div
-        style={{
-          position: "relative",
-          padding: "56.25% 0 0 0",
-          width: "100%",
-          height: "100%",
-        }}
-      >
-        <iframe
-          src="https://mint.webmint.io/mint-module/cgc-membership"
-          frameBorder="0px"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            border: "3px solid transparent",
-            borderRadius: "20px",
-          }}
-        />
+        <h2>Launching 12.09</h2>
       </div>
 
       <Stack>
