@@ -1,6 +1,6 @@
 import { Button, ButtonProps, keyframes, useTheme } from "@mui/material";
 import React, { ReactNode, useState, useEffect } from "react";
-import { ethers, Bytes, JsonRpcSigner } from "ethers";
+import { ethers, JsonRpcSigner } from "ethers";
 import { guild, user, role, Requirement } from "@guildxyz/sdk";
 import {
   signer,
@@ -52,7 +52,7 @@ const ConnectWalletButton: React.FC<ConnectWalletProps> = ({
         const address = wallet.getAddress();
 
         // Sign function for role assignment
-        const sign = async (signableMessage: string | Bytes) => {
+        const sign = async (signableMessage: string | any) => {
           const signature = await wallet.signMessage(signableMessage);
           return signature;
         };
