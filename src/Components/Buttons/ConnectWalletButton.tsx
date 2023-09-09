@@ -52,7 +52,7 @@ const ConnectWalletButton: React.FC<ConnectWalletProps> = ({
         const address = wallet.getAddress();
 
         // Sign function for role assignment
-        const sign = async (signableMessage: string | Bytes) => {
+        const sign = async (signableMessage: string | any) => {
           const signature = await wallet.signMessage(signableMessage);
           return signature;
         };
