@@ -1,9 +1,11 @@
 import React from "react";
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography, useTheme } from "@mui/material";
 import MintButton from "@/src/Components/Buttons/MintButton";
 import Link from "next/link";
 
 function WhiteList() {
+  const theme = useTheme();
+
   return (
     <Stack
       margin="3rem"
@@ -12,7 +14,16 @@ function WhiteList() {
       justifyContent="center"
     >
       <div id="joinWhitelist" style={{ margin: "1rem" }}>
-        <Typography style={{ fontSize: "30px", fontWeight: "bold" }}>
+        <Typography
+          style={{
+            fontSize: "30px",
+            fontWeight: "bold",
+            [theme.breakpoints.down("md")]: {
+              fontsize: "27px",
+              fontWeight: "bold",
+            },
+          }}
+        >
           Launching 12.09
         </Typography>
       </div>
@@ -22,7 +33,7 @@ function WhiteList() {
       <Stack>
         <Grid container>
           <Grid item xs={6}>
-            <Typography textAlign="end">Launch date: &nbsp;</Typography>
+            <Typography textAlign="end">Open: &nbsp;</Typography>
           </Grid>
           <Grid xs={6}>
             <Typography>12.09.2023</Typography>
