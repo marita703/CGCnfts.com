@@ -12,7 +12,9 @@ function WhiteList() {
       justifyContent="center"
     >
       <div id="joinWhitelist" style={{ margin: "1rem" }}>
-        <h2>Launching 12.09</h2>
+        <Typography style={{ fontSize: "30px", fontWeight: "bold" }}>
+          Launching 12.09
+        </Typography>
       </div>
 
       <MintButton sx={{ margin: "2rem" }} />
@@ -46,7 +48,7 @@ function WhiteList() {
           <Grid xs={12} textAlign="center" sx={{ mt: "1rem" }}>
             <Typography>
               {" "}
-              Do not forget to check your newly minted NFT on{" "}
+              Don't forget to check your newly minted NFT{" "}
               <Link
                 href="https://opensea.io"
                 target="_blank"
