@@ -61,7 +61,7 @@ function WhiteList() {
               {" "}
               Don't forget to check your newly minted NFT{" "}
               <Link
-                href="https://opensea.io"
+                href="https://opensea.io/collection/cgc-membership"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#2567ff", textDecoration: "underline" }}
