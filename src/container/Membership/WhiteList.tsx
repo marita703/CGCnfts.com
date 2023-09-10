@@ -1,9 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography, useTheme } from "@mui/material";
 import MintButton from "@/src/Components/Buttons/MintButton";
 import Link from "next/link";
 
 function WhiteList() {
+  const theme = useTheme();
+
   return (
     <Stack
       margin="3rem"
@@ -12,7 +15,18 @@ function WhiteList() {
       justifyContent="center"
     >
       <div id="joinWhitelist" style={{ margin: "1rem" }}>
-        <h2>Launching 12.09</h2>
+        <Typography
+          style={{
+            fontSize: "30px",
+            fontWeight: "bold",
+            [theme.breakpoints.down("md")]: {
+              fontsize: "27px",
+              fontWeight: "bold",
+            },
+          }}
+        >
+          Launching 12.09
+        </Typography>
       </div>
 
       <MintButton sx={{ margin: "2rem" }} />
@@ -20,7 +34,7 @@ function WhiteList() {
       <Stack>
         <Grid container>
           <Grid item xs={6}>
-            <Typography textAlign="end">Launch date: &nbsp;</Typography>
+            <Typography textAlign="end">Open: &nbsp;</Typography>
           </Grid>
           <Grid xs={6}>
             <Typography>12.09.2023</Typography>
@@ -46,9 +60,9 @@ function WhiteList() {
           <Grid xs={12} textAlign="center" sx={{ mt: "1rem" }}>
             <Typography>
               {" "}
-              Do not forget to check your newly minted NFT on{" "}
+              Don't forget to check your newly minted NFT{" "}
               <Link
-                href="https://opensea.io"
+                href="https://opensea.io/collection/cgc-membership"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#2567ff", textDecoration: "underline" }}
