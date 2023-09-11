@@ -70,7 +70,7 @@ const TeamData: teamData[] = [
   {
     name: "Valery Murillo",
     url: "/Images/TeamImages/31.png",
-    rol: "Community Manager",
+    rol: "Partnerships Manager",
     linkedin: "https://www.linkedin.com/in/valery-murillo-ba499a15b//",
   },
 ];
