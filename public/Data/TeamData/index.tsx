@@ -55,6 +55,24 @@ const TeamData: teamData[] = [
     rol: "Community Manager",
     linkedin: "https://www.linkedin.com/in/julianeverissimo/",
   },
+  {
+    name: "Thais Ribeiro",
+    url: "/Images/TeamImages/29.png",
+    rol: "Partner Support",
+    linkedin: "https://www.linkedin.com/in/thaisbretz/",
+  },
+  {
+    name: "Ara",
+    url: "/Images/TeamImages/30.png",
+    rol: " Metaverse Officer",
+    linkedin: "https://www.linkedin.com/in/julianeverissimo/",
+  },
+  {
+    name: "Valery Murillo",
+    url: "/Images/TeamImages/31.png",
+    rol: "Community Manager",
+    linkedin: "https://www.linkedin.com/in/valery-murillo-ba499a15b//",
+  },
 ];
 
 export default TeamData;
