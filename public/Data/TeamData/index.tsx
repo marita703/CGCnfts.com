@@ -63,9 +63,9 @@ const TeamData: teamData[] = [
   },
   {
     name: "Ara",
-    url: "/Images/TeamImages/30.png",
+    url: "/Images/TeamImages/33.png",
     rol: " Metaverse Officer",
-    linkedin: "https://www.linkedin.com/in/julianeverissimo/",
+    linkedin: "https://www.linkedin.com/in/gmtamara/",
   },
   {
     name: "Valery Murillo",
