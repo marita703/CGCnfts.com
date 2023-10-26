@@ -66,17 +66,17 @@ function Header() {
               internet of the future.
             </Typography>
             <Link
-              href="#newsletter"
+              href="https://t.me/joinchat/n6z0tNyZC3IxYmU0"
               style={{
                 textAlign: "left",
                 color: "#e277ae",
                 textDecoration: "underline",
                 marginTop: "1rem",
                 fontWeight: "bold",
-                fontSize: "14px",
+                fontSize: "20px",
               }}
             >
-              Sign up to our newsletter to join our community
+              Join our Telegram to join our community
             </Link>
           </Stack>
         </Grid>
