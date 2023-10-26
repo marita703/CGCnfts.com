@@ -70,8 +70,15 @@ function WhiteList() {
           </Grid>
           <Grid xs={12} textAlign="center" sx={{ mt: "2rem" }}>
             <Typography>
-              Once minted, head over to our Discord to unlock your membership
-              perks
+              Once minted, head over to our{" "}
+              <Link
+                href="https://discord.com/invite/YpC7qw22Pb"
+                target="_blank"
+                style={{ color: "#e277ae", textDecoration: "underline" }}
+              >
+                Discord
+              </Link>{" "}
+              to unlock your membership perks
             </Typography>
           </Grid>
         </Grid>
