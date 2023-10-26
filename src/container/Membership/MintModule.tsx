@@ -14,7 +14,10 @@ function WhiteList() {
       alignItems="center"
       justifyContent="center"
     >
-      <div id="joinWhitelist" style={{ margin: "1rem" }}>
+      <div
+        id="joinWhitelist"
+        style={{ marginTop: "2rem", marginBottom: "2rem" }}
+      >
         <Typography
           style={{
             fontSize: "30px",
@@ -25,7 +28,7 @@ function WhiteList() {
             },
           }}
         >
-          Launching 12.09
+          GET YOUR MEMBERSHIP:
         </Typography>
       </div>
 
@@ -40,12 +43,6 @@ function WhiteList() {
             <Typography>12.09.2023</Typography>
           </Grid>
           <Grid item xs={6}>
-            <Typography textAlign="end"> Allowlist: &nbsp;</Typography>
-          </Grid>
-          <Grid xs={6}>
-            <Typography>16:00 CET</Typography>
-          </Grid>
-          <Grid item xs={6}>
             <Typography textAlign="end"> Main mint: &nbsp;</Typography>
           </Grid>
           <Grid xs={6}>
@@ -57,7 +54,7 @@ function WhiteList() {
           <Grid xs={6}>
             <Typography>99 MATIC</Typography>
           </Grid>
-          <Grid xs={12} textAlign="center" sx={{ mt: "1rem" }}>
+          <Grid xs={12} textAlign="center" sx={{ mt: "2rem" }}>
             <Typography>
               {" "}
               Don't forget to check your newly minted NFT{" "}
@@ -69,6 +66,12 @@ function WhiteList() {
               >
                 OpenSea
               </Link>
+            </Typography>
+          </Grid>
+          <Grid xs={12} textAlign="center" sx={{ mt: "2rem" }}>
+            <Typography>
+              Once minted, head over to our Discord to unlock your membership
+              perks
             </Typography>
           </Grid>
         </Grid>
