@@ -37,18 +37,6 @@ function WhiteList() {
       <Stack>
         <Grid container>
           <Grid item xs={6}>
-            <Typography textAlign="end">Open: &nbsp;</Typography>
-          </Grid>
-          <Grid xs={6}>
-            <Typography>12.09.2023</Typography>
-          </Grid>
-          <Grid item xs={6}>
-            <Typography textAlign="end"> Main mint: &nbsp;</Typography>
-          </Grid>
-          <Grid xs={6}>
-            <Typography>17:00 CET</Typography>
-          </Grid>
-          <Grid item xs={6}>
             <Typography textAlign="end"> Price: &nbsp;</Typography>
           </Grid>
           <Grid xs={6}>
