@@ -4,6 +4,7 @@ import { useState } from "react";
 import MenuButton from "../Buttons/MenuButton";
 import menuButtons from "@/public/Data/MenuButtonsData";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import { connectWallet } from "@/src/Components/Web3Connect/web3connect";
 
 const DropDownMenuSmallScreen: React.FC<ButtonProps> = ({
   children,
