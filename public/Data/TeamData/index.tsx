@@ -12,16 +12,11 @@ const TeamData: teamData[] = [
     rol: "Co-founder",
     linkedin: "https://www.linkedin.com/in/zoe-faircloth/",
   },
-  {
-    name: "Jean Feier",
-    url: "/Images/TeamImages/28.png",
-    rol: "Managing Director",
-    linkedin: "https://www.linkedin.com/in/jeanine-feierfeil/",
-  },
+
   {
     name: "Victoria Hoffman",
     url: "/Images/TeamImages/26.png",
-    rol: "Co-founder",
+    rol: "Advisor",
     linkedin: "https://de.linkedin.com/in/victoriahoffmann/",
   },
   {
