@@ -13,7 +13,7 @@ function Benefits() {
       justifyContent="center"
       sx={{ m: "3rem" }}
     >
-      <div>
+      <div style={{ marginTop: "3rem" }}>
         <h2 id="benefits">FUTURE BENEFITS</h2>
       </div>
       <Grid container>

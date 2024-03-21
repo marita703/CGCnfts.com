@@ -1,17 +1,29 @@
 import { Button, ButtonProps, Menu, MenuItem } from "@mui/material";
-import React from "react";
+import React, { ReactNode, useEffect } from "react";
 import { useState } from "react";
 import MenuButton from "../Buttons/MenuButton";
 import menuButtons from "@/public/Data/MenuButtonsData";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import { connectWallet } from "@/src/Components/Web3Connect/web3connect";
+import ConnectWalletButton from "../Buttons/ConnectWalletButton";
 
-const DropDownMenuSmallScreen: React.FC<ButtonProps> = ({
-  children,
-  size = "normal",
-  sx = {},
-  href,
+interface ConnectWalletButtonProps {
+  setWeb3Provider: (provider: any) => void; // Define the setWeb3Provider prop
+  web3Provider: any;
+}
+
+const DropDownMenuSmallScreen: React.FC<ConnectWalletButtonProps> = ({
+  setWeb3Provider,
+  web3Provider,
 }) => {
+  function shortAddress(addressString: string): string {
+    const first4: string = addressString?.slice(0, 4);
+    const last4: string = addressString?.slice(-4);
+    const truncatedString = first4 + "..." + last4;
+    return truncatedString;
+  }
+
+  const truncatedAddress = shortAddress(web3Provider);
+
   const [anchorE1, setAnchorE1] = useState<null | HTMLElement>(null);
 
   const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -31,7 +43,6 @@ const DropDownMenuSmallScreen: React.FC<ButtonProps> = ({
           background: "transparent",
           fontSize: "20px",
           color: "white",
-          ...sx,
         }}
       >
         MENU
@@ -47,6 +58,11 @@ const DropDownMenuSmallScreen: React.FC<ButtonProps> = ({
             <MenuButton href={menuButton.href}>{menuButton.label}</MenuButton>
           </MenuItem>
         ))}
+        <MenuItem>
+          <ConnectWalletButton size="small" setWeb3Provider={setWeb3Provider}>
+            {!web3Provider ? "Connect Wallet" : truncatedAddress}
+          </ConnectWalletButton>
+        </MenuItem>
       </Menu>
     </>
   );

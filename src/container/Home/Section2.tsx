@@ -58,7 +58,7 @@ function Section2() {
           </Typography>
         </Stack>
 
-        <MainButton sx={{ fontSize: "20px" }}>JOIN</MainButton>
+        <MainButton sx={{ fontSize: "20px" }}>MINT NOW!</MainButton>
 
         {/* Neo Objects */}
         {/* this will change the opacity until it disapears */}

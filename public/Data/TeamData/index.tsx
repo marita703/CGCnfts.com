@@ -12,16 +12,11 @@ const TeamData: teamData[] = [
     rol: "Co-founder",
     linkedin: "https://www.linkedin.com/in/zoe-faircloth/",
   },
-  {
-    name: "Jean Feier",
-    url: "/Images/TeamImages/28.png",
-    rol: "Managing Director",
-    linkedin: "https://www.linkedin.com/in/jeanine-feierfeil/",
-  },
+
   {
     name: "Victoria Hoffman",
     url: "/Images/TeamImages/26.png",
-    rol: "Co-founder",
+    rol: "Advisor",
     linkedin: "https://de.linkedin.com/in/victoriahoffmann/",
   },
   {
@@ -54,6 +49,19 @@ const TeamData: teamData[] = [
     url: "/Images/TeamImages/22.png",
     rol: "Community Manager",
     linkedin: "https://www.linkedin.com/in/julianeverissimo/",
+  },
+  {
+    name: "Thais Ribeiro",
+    url: "/Images/TeamImages/29.png",
+    rol: "Partner Support",
+    linkedin: "https://www.linkedin.com/in/thaisbretz/",
+  },
+
+  {
+    name: "Valery Murillo",
+    url: "/Images/TeamImages/31.png",
+    rol: "Partnerships Manager",
+    linkedin: "https://www.linkedin.com/in/valery-murillo-ba499a15b//",
   },
 ];
 

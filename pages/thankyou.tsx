@@ -14,7 +14,7 @@ function thankyou() {
       >
         <h1>Thank you!</h1>
         <p style={{ fontSize: "20px", textAlign: "center" }}>
-          We have recieved your information, you will be hearing from us soon.
+          We have received your information, you will be hearing from us soon.
         </p>
       </Stack>
     </Layout>
